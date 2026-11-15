@@ -91,7 +91,7 @@ export function Header() {
               src="/images/logo-lozartico-nav.webp"
               alt="Lozartico"
               width={800}
-              height={191}
+              height={144}
               priority
             />
           </Link>

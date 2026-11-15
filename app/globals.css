@@ -332,7 +332,6 @@ img {
 .nav__logo {
   width: 188px;
   height: auto;
-  border-radius: 8px;
 }
 
 .nav__links {
@@ -1738,7 +1737,6 @@ a.trust__item:hover {
 .footer__logo {
   width: 180px;
   height: auto;
-  border-radius: 6px;
 }
 
 .footer__description {

@@ -26,7 +26,7 @@ for (const [source, output] of images) {
 }
 
 const logo = await readFile(
-  path.join(outputDir, "logo-lozartico-nav.webp"),
+  path.join(outputDir, "logo-lozartico-footer.webp"),
 );
 const logoUri = `data:image/webp;base64,${logo.toString("base64")}`;
 const hero = await sharp(path.join(sourceDir, "aire_acondicionado_montaje_mantenimiento_lozartico.jpeg"))
