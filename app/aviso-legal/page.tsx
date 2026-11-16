@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Aviso legal",
   robots: indexableRobots,
   description:
-    "Información legal sobre el sitio web de Lozartico SL, empresa de climatización, reformas e impermeabilización.",
+    "Información legal sobre el sitio web de Lozartico Servicios Integrales, S.L.U., empresa de construcción, reformas e instalaciones.",
   alternates: canonical("/aviso-legal/"),
 };
 
@@ -18,8 +18,15 @@ export default function AvisoLegalPage() {
       <h2>1. Titular del sitio</h2>
       <p>
         Este sitio web pertenece a <strong>{siteConfig.legalName}</strong>, con
-        domicilio profesional en {siteConfig.address.locality} (
-        {siteConfig.address.region}), España.
+        NIF <strong>{siteConfig.nif}</strong> y domicilio social en{" "}
+        {siteConfig.address.street}, {siteConfig.address.postalCode}{" "}
+        {siteConfig.address.locality} ({siteConfig.address.municipality}),
+        {siteConfig.address.region}, España.
+      </p>
+      <p>
+        Delegación en {siteConfig.delegation.street},{" "}
+        {siteConfig.delegation.postalCode} {siteConfig.delegation.locality},{" "}
+        {siteConfig.delegation.region}. Inscrita en el {siteConfig.registry}.
       </p>
       <p>
         Para cualquier consulta puedes escribir a{" "}
@@ -30,9 +37,9 @@ export default function AvisoLegalPage() {
       <h2>2. Objeto</h2>
       <p>
         El sitio tiene carácter informativo y presenta los servicios de
-        climatización, reformas e impermeabilización que realiza Lozartico en
-        Valencia y Gran Canaria, así como proyectos realizados y vías de
-        contacto.
+        construcción, reformas, instalaciones y climatización que realiza
+        Lozartico en Valencia y Gran Canaria, así como proyectos realizados y
+        vías de contacto.
       </p>
 
       <h2>3. Condiciones de uso</h2>

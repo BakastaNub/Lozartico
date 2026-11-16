@@ -12,8 +12,8 @@ export function ProjectsSection() {
         <div className="section-head">
           <SectionHeading
             eyebrow="Proyectos"
-            title="Trabajos que hablan por sí solos"
-            text="Una selección de reformas, instalaciones y espacios exteriores realizados por nuestro equipo. Toca una imagen para verla con más detalle."
+            title="Reformas y obra que hablan por sí solas"
+            text="Una selección de reformas, baños, espacios exteriores e impermeabilizaciones realizadas por nuestro equipo. Toca una imagen para verla con más detalle."
           />
           <Link className="section-link" href="#contacto">
             Cuéntanos tu proyecto

@@ -1,26 +1,32 @@
-import { copyFile, mkdir, readFile } from "node:fs/promises";
+import { mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 
 const root = process.cwd();
 const sourceDir = path.join(root, "legacy", "images");
+const newSourceDir = path.join(root, "legacy", "source-images");
 const outputDir = path.join(root, "public", "images");
 
 const images = [
-  ["aire_acondicionado_montaje_mantenimiento_lozartico.jpeg", "hero-aire-acondicionado.webp"],
-  ["bano_reformado_lozartico_moderno.jpg", "proyecto-bano.webp"],
-  ["habitacion_con-armario_empotrado_paredes_blancas_lozartico.jpg", "proyecto-armario.webp"],
-  ["habitacion_reformada_lozartico_azulyblanco.jpg", "proyecto-habitacion.webp"],
-  ["patio_reformado_espana_lozartico.jpg", "proyecto-patio.webp"],
+  { source: path.join(sourceDir, "aire_acondicionado_montaje_mantenimiento_lozartico.jpeg"), output: "hero-aire-acondicionado.webp" },
+  { source: path.join(sourceDir, "habitacion_con-armario_empotrado_paredes_blancas_lozartico.jpg"), output: "proyecto-armario.webp" },
+  { source: path.join(sourceDir, "habitacion_reformada_lozartico_azulyblanco.jpg"), output: "proyecto-habitacion.webp" },
+  { source: path.join(sourceDir, "patio_reformado_espana_lozartico.jpg"), output: "proyecto-patio.webp" },
+  { source: path.join(newSourceDir, "bano-1.jpeg"), output: "reforma-bano-1.webp" },
+  { source: path.join(newSourceDir, "bano-2.jpeg"), output: "reforma-bano-2.webp" },
+  { source: path.join(newSourceDir, "construccion.jpeg"), output: "construccion.webp", width: 900, quality: 78 },
+  { source: path.join(newSourceDir, "equipo.jpeg"), output: "equipo-lozartico.webp" },
+  { source: path.join(newSourceDir, "sede.jpeg"), output: "sede-lozartico.webp" },
+  { source: path.join(newSourceDir, "tejado.jpeg"), output: "impermeabilizacion-tejado.webp", width: 900, quality: 78 },
 ];
 
 await mkdir(outputDir, { recursive: true });
 
-for (const [source, output] of images) {
-  await sharp(path.join(sourceDir, source))
+for (const { source, output, width = 1080, quality = 82 } of images) {
+  await sharp(source)
     .rotate()
-    .resize({ width: 1080, withoutEnlargement: true })
-    .webp({ quality: 82 })
+    .resize({ width, withoutEnlargement: true })
+    .webp({ quality })
     .toFile(path.join(outputDir, output));
   console.log(`created ${output}`);
 }
@@ -29,7 +35,7 @@ const logo = await readFile(
   path.join(outputDir, "logo-lozartico-footer.webp"),
 );
 const logoUri = `data:image/webp;base64,${logo.toString("base64")}`;
-const hero = await sharp(path.join(sourceDir, "aire_acondicionado_montaje_mantenimiento_lozartico.jpeg"))
+const hero = await sharp(path.join(newSourceDir, "construccion.jpeg"))
   .rotate()
   .resize(700, 630, { fit: "cover", position: "attention" })
   .modulate({ brightness: 0.78, saturation: 0.9 })
@@ -74,16 +80,3 @@ await sharp({
   .toFile(path.join(outputDir, "og-cover.jpg"));
 
 console.log("created og-cover.jpg");
-
-const faviconDir = path.join(root, "legacy", "favicons");
-const faviconOutputs = [
-  ["favicon-32x32.png", "favicon-32x32.png"],
-  ["android-icon-192x192.png", "icon-192.png"],
-  ["apple-icon-180x180.png", "apple-icon-180.png"],
-  ["favicon.ico", "favicon.ico"],
-];
-
-for (const [source, output] of faviconOutputs) {
-  await copyFile(path.join(faviconDir, source), path.join(root, "public", output));
-  console.log(`copied ${output}`);
-}

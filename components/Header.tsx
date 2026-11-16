@@ -19,8 +19,8 @@ import {
 const navLinks = [
   { label: "Servicios", href: "/#servicios" },
   { label: "Proyectos", href: "/#proyectos" },
-  { label: "Zonas", href: "/#zonas" },
-  { label: "Opiniones", href: "/#opiniones" },
+  { label: "Empresa", href: "/#empresa" },
+  { label: "Acreditaciones", href: "/#acreditaciones" },
   { label: "Contacto", href: "/#contacto" },
 ];
 

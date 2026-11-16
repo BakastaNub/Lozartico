@@ -6,6 +6,7 @@ import { whatsappHref } from "@/lib/contact";
 import {
   ArrowRightIcon,
   ArrowUpRightIcon,
+  BoltIcon,
   CheckIcon,
   DropletIcon,
   HomeIcon,
@@ -20,6 +21,7 @@ const serviceIcons = {
   home: HomeIcon,
   terrace: DropletIcon,
   wrench: WrenchIcon,
+  bolt: BoltIcon,
 };
 
 export function ServicesSection() {
@@ -29,8 +31,8 @@ export function ServicesSection() {
         <div className="section-head">
           <SectionHeading
             eyebrow="Servicios"
-            title="Todo lo que tu casa necesita, en un solo equipo"
-            text="Climatización, reformas e impermeabilización con un mismo criterio: hacer las cosas bien y dejar cada espacio mejor de como lo encontramos."
+            title="Reformas primero. Todo lo demás, coordinado."
+            text="Construcción y reformas integrales, alicatados, pintura e impermeabilización, con fontanería, electricidad y climatización cuando el proyecto lo necesita."
           />
           <Link className="section-link" href="#contacto">
             Hablemos de tu proyecto
@@ -44,7 +46,9 @@ export function ServicesSection() {
 
             return (
               <article
-                className="service-card"
+                className={`service-card${
+                  service.id === "reformas" ? " service-card--featured" : ""
+                }`}
                 key={service.id}
                 data-reveal
                 style={

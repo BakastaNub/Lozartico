@@ -1,4 +1,4 @@
-export type ServiceImage = {
+﻿export type ServiceImage = {
   src: string;
   alt: string;
   width: number;
@@ -22,7 +22,12 @@ export type ServiceFAQ = {
 
 export type Service = {
   slug: string;
-  category: "climatizacion" | "reformas" | "impermeabilizacion";
+  category:
+    | "reformas"
+    | "fontaneria"
+    | "electricidad"
+    | "climatizacion"
+    | "impermeabilizacion";
   eyebrow: string;
   title: string;
   heroText: string;
@@ -42,7 +47,7 @@ export type Service = {
 
 export type HomeService = {
   id: string;
-  icon: "air" | "home" | "terrace" | "wrench";
+  icon: "air" | "home" | "terrace" | "wrench" | "bolt";
   title: string;
   description: string;
   bullets: string[];
@@ -51,17 +56,47 @@ export type HomeService = {
 };
 
 const images = {
+  construccion: {
+    src: "/images/construccion.webp",
+    alt: "Obra de construcción y reforma realizada por Lozartico",
+    width: 900,
+    height: 1200,
+  },
+  bano1: {
+    src: "/images/reforma-bano-1.webp",
+    alt: "Reforma de baño con alicatado moderno realizada por Lozartico",
+    width: 1080,
+    height: 1920,
+  },
+  bano2: {
+    src: "/images/reforma-bano-2.webp",
+    alt: "Detalle de reforma de baño con acabados de calidad de Lozartico",
+    width: 1080,
+    height: 1920,
+  },
+  equipo: {
+    src: "/images/equipo-lozartico.webp",
+    alt: "Equipo de profesionales de Lozartico",
+    width: 1080,
+    height: 1440,
+  },
+  sede: {
+    src: "/images/sede-lozartico.webp",
+    alt: "Sede de Lozartico en Vecindario, Gran Canaria",
+    width: 1080,
+    height: 807,
+  },
+  tejado: {
+    src: "/images/impermeabilizacion-tejado.webp",
+    alt: "Trabajo de impermeabilización de tejado y cubierta de Lozartico",
+    width: 900,
+    height: 1200,
+  },
   aire: {
     src: "/images/hero-aire-acondicionado.webp",
     alt: "Instalación y mantenimiento de aire acondicionado por Lozartico",
     width: 1080,
     height: 1440,
-  },
-  bano: {
-    src: "/images/proyecto-bano.webp",
-    alt: "Baño moderno reformado por Lozartico en Valencia",
-    width: 1080,
-    height: 1349,
   },
   armario: {
     src: "/images/proyecto-armario.webp",
@@ -85,15 +120,61 @@ const images = {
 
 export const homeServices: HomeService[] = [
   {
+    id: "reformas",
+    icon: "home",
+    title: "Reformas y construcción",
+    description:
+      "Reformas integrales de viviendas, locales y comunidades. Coordinamos alicatados, pintura, impermeabilización, fontanería y electricidad para que cada obra tenga un resultado coherente.",
+    bullets: [
+      "Reformas integrales y alicatados",
+      "Pintura e impermeabilización de terrazas y fachadas",
+      "Coordinación de todos los oficios",
+    ],
+    whatsappMessage: "Hola, quiero presupuesto para una reforma.",
+    links: [
+      { label: "Valencia", href: "/reformas-valencia" },
+      { label: "Gran Canaria", href: "/reformas-gran-canaria" },
+      { label: "Impermeabilización", href: "/impermeabilizacion-terrazas" },
+    ],
+  },
+  {
+    id: "fontaneria",
+    icon: "wrench",
+    title: "Fontanería",
+    description:
+      "Renovamos y reparamos instalaciones de fontanería en baños, cocinas y comunidades, incluyendo bajantes de fincas y soluciones para filtraciones.",
+    bullets: [
+      "Baños y cocinas",
+      "Bajantes de fincas",
+      "Renovación de instalaciones",
+    ],
+    whatsappMessage: "Hola, quiero presupuesto para fontanería.",
+    links: [{ label: "Ver servicio", href: "/fontaneria" }],
+  },
+  {
+    id: "electricidad",
+    icon: "bolt",
+    title: "Electricidad",
+    description:
+      "Instalaciones eléctricas para viviendas, locales y empresas, con atención a acometidas, cuadros de potencia y seguridad de la instalación.",
+    bullets: [
+      "Acometidas industriales y residenciales",
+      "Cuadros de potencia",
+      "Instalaciones y mejoras eléctricas",
+    ],
+    whatsappMessage: "Hola, quiero presupuesto para electricidad.",
+    links: [{ label: "Ver servicio", href: "/electricidad" }],
+  },
+  {
     id: "climatizacion",
     icon: "air",
     title: "Climatización",
     description:
-      "Instalación y mantenimiento de aire acondicionado split y multisplit, calefacción y ventilación para viviendas y negocios.",
+      "Instalación y mantenimiento de aire acondicionado split y conductos para viviendas, oficinas y locales que necesitan confort durante todo el año.",
     bullets: [
-      "Aire acondicionado split y multisplit",
-      "Calefacción y bomba de calor",
-      "Ventilación y renovación de aire",
+      "Aire acondicionado split",
+      "Sistemas por conductos",
+      "Mantenimiento de equipos",
     ],
     whatsappMessage: "Hola, quiero presupuesto para aire acondicionado.",
     links: [
@@ -101,59 +182,353 @@ export const homeServices: HomeService[] = [
       { label: "Gran Canaria", href: "/aire-acondicionado-gran-canaria" },
     ],
   },
-  {
-    id: "reformas",
-    icon: "home",
-    title: "Reformas integrales",
-    description:
-      "Transformamos viviendas y locales con reformas completas de baños, cocinas, habitaciones y espacios interiores.",
-    bullets: [
-      "Reforma de baños y cocinas",
-      "Reformas de viviendas y locales",
-      "Patios, terrazas y exteriores",
-    ],
-    whatsappMessage: "Hola, quiero presupuesto para una reforma.",
-    links: [
-      { label: "Valencia", href: "/reformas-valencia" },
-      { label: "Gran Canaria", href: "/reformas-gran-canaria" },
-    ],
-  },
-  {
-    id: "impermeabilizacion",
-    icon: "terrace",
-    title: "Impermeabilización",
-    description:
-      "Protegemos terrazas, cubiertas y patios frente a filtraciones, humedades y goteras con soluciones duraderas.",
-    bullets: [
-      "Terrazas y cubiertas",
-      "Filtraciones y humedades",
-      "Acabados exteriores",
-    ],
-    whatsappMessage: "Hola, necesito impermeabilizar una terraza.",
-    links: [
-      {
-        label: "Ver servicio",
-        href: "/impermeabilizacion-terrazas",
-      },
-    ],
-  },
-  {
-    id: "mantenimiento",
-    icon: "wrench",
-    title: "Mantenimiento",
-    description:
-      "Revisiones periódicas y asistencia para mantener los equipos de climatización funcionando de forma eficiente.",
-    bullets: [
-      "Revisión y limpieza de equipos",
-      "Contratos de mantenimiento",
-      "Asistencia técnica",
-    ],
-    whatsappMessage: "Hola, quiero información sobre mantenimiento.",
-    links: [],
-  },
 ];
 
 export const services: Service[] = [
+  {
+    slug: "reformas-valencia",
+    category: "reformas",
+    eyebrow: "Construcción y reformas en Valencia",
+    title: "Reformas integrales en Valencia",
+    heroText:
+      "Reformas integrales para viviendas, locales y comunidades en Valencia. Coordinamos albañilería, alicatados, pintura, fontanería, electricidad e impermeabilización para que la obra avance con un solo interlocutor.",
+    introTitle: "Una obra bien planificada empieza antes de levantar nada",
+    introText:
+      "Analizamos el estado del espacio y el objetivo de la reforma para definir los trabajos necesarios, los materiales y los acabados. La coordinación es clave para que cada parte de la obra tenga sentido.",
+    benefitsTitle: "Qué podemos reformar",
+    benefits: [
+      {
+        title: "Reformas integrales",
+        text: "Transformación de viviendas, locales y comunidades para mejorar distribución, acabados, funcionalidad y confort.",
+      },
+      {
+        title: "Baños y cocinas",
+        text: "Reformas completas con demolición, alicatado, fontanería, electricidad, revestimientos y montaje.",
+      },
+      {
+        title: "Terrazas, fachadas y pintura",
+        text: "Impermeabilización, reparación de superficies, pintura y acabados para proteger y renovar el inmueble.",
+      },
+    ],
+    steps: [
+      {
+        title: "Visita y medición",
+        text: "Revisamos el estado del inmueble, los metros y las necesidades de la reforma.",
+      },
+      {
+        title: "Planificación",
+        text: "Definimos trabajos, materiales, acabados y el orden de la obra.",
+      },
+      {
+        title: "Ejecución",
+        text: "Coordinamos los oficios y cuidamos la limpieza y los detalles durante el proceso.",
+      },
+      {
+        title: "Entrega",
+        text: "Revisamos el resultado contigo y resolvemos los últimos ajustes.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Qué incluye una reforma integral?",
+        answer:
+          "Depende del estado del inmueble y del objetivo. Puede incluir demolición, albañilería, instalaciones, revestimientos, carpintería y acabados.",
+      },
+      {
+        question: "¿Hacéis reformas de baños y cocinas?",
+        answer:
+          "Sí. Trabajamos reformas completas de baños y cocinas, coordinando fontanería, electricidad, alicatado, revestimientos y montaje.",
+      },
+      {
+        question: "¿Cómo se planifica la obra?",
+        answer:
+          "Primero visitamos el espacio y definimos el alcance. Después preparamos el presupuesto y organizamos los trabajos para minimizar molestias.",
+      },
+    ],
+    image: images.bano1,
+    gallery: [images.bano2, images.construccion, images.armario],
+    whatsappMessage: "Hola, quiero presupuesto para una reforma en Valencia.",
+    metaTitle:
+      "Reformas integrales en Valencia | Baños, cocinas y obra | Lozartico",
+    metaDescription:
+      "Reformas integrales en Valencia para viviendas, locales y comunidades. Baños, cocinas, alicatados, pintura, fontanería, electricidad e impermeabilización.",
+    related: ["reformas-gran-canaria", "impermeabilizacion-terrazas"],
+  },
+  {
+    slug: "reformas-gran-canaria",
+    category: "reformas",
+    eyebrow: "Construcción y reformas en Gran Canaria",
+    title: "Reformas integrales en Gran Canaria",
+    heroText:
+      "Reformas integrales y renovación de viviendas, locales y comunidades en Las Palmas de Gran Canaria y otros puntos de la isla, con planificación, instalaciones y acabados coordinados.",
+    introTitle: "Espacios renovados para vivir y trabajar mejor",
+    introText:
+      "Adaptamos los trabajos al estado del inmueble y al uso previsto, desde una reforma de baño hasta una renovación más completa. Materiales, ventilación y exposición solar son factores clave en Canarias.",
+    benefitsTitle: "Reformas para cada necesidad",
+    benefits: [
+      {
+        title: "Reforma de vivienda",
+        text: "Actualización de distribución, revestimientos, instalaciones y acabados para conseguir un espacio cómodo.",
+      },
+      {
+        title: "Baños, cocinas y fontanería",
+        text: "Renovación de superficies, instalaciones y elementos de uso diario, cuidando diseño y resistencia.",
+      },
+      {
+        title: "Interiores, exteriores y fachadas",
+        text: "Mejoras en habitaciones, patios, terrazas y fachadas para adaptar el inmueble a nuevas necesidades.",
+      },
+    ],
+    steps: [
+      {
+        title: "Visita y medición",
+        text: "Revisamos el estado del inmueble y escuchamos qué quieres conseguir.",
+      },
+      {
+        title: "Planificación",
+        text: "Definimos trabajos, materiales y acabados adaptados al clima y al uso.",
+      },
+      {
+        title: "Ejecución",
+        text: "Coordinamos la obra y mantenemos el espacio ordenado durante los trabajos.",
+      },
+      {
+        title: "Entrega",
+        text: "Revisamos el resultado contigo y cerramos los detalles finales.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Reformáis viviendas y locales en Gran Canaria?",
+        answer:
+          "Sí. Trabajamos en Las Palmas de Gran Canaria y otros puntos de la isla, tanto en viviendas como en locales y comunidades.",
+      },
+      {
+        question: "¿Qué materiales convienen en Canarias?",
+        answer:
+          "La elección depende del uso y la exposición. Valoramos humedad, ventilación, sol y resistencia para proponer materiales duraderos.",
+      },
+      {
+        question: "¿Cómo empiezo una reforma?",
+        answer:
+          "Escríbenos con la ubicación, el tipo de espacio y lo que quieres cambiar. Concertamos una visita y preparamos el presupuesto.",
+      },
+    ],
+    image: images.construccion,
+    gallery: [images.armario, images.habitacion, images.tejado],
+    whatsappMessage:
+      "Hola, quiero presupuesto para una reforma en Gran Canaria.",
+    metaTitle:
+      "Reformas integrales en Gran Canaria | Viviendas y locales | Lozartico",
+    metaDescription:
+      "Reformas integrales en Gran Canaria para viviendas, locales y comunidades. Baños, cocinas, alicatados, pintura e impermeabilización con acabados duraderos.",
+    related: ["reformas-valencia", "impermeabilizacion-terrazas"],
+  },
+  {
+    slug: "impermeabilizacion-terrazas",
+    category: "impermeabilizacion",
+    eyebrow: "Impermeabilización de terrazas y fachadas",
+    title: "Impermeabilización de terrazas y fachadas",
+    heroText:
+      "Protegemos terrazas, cubiertas, tejados y fachadas frente a filtraciones, humedades y goteras con soluciones profesionales adaptadas a cada superficie en Valencia y Gran Canaria.",
+    introTitle: "Soluciones contra filtraciones, humedades y goteras",
+    introText:
+      "Aplicamos soluciones para terrazas, cubiertas, tejados y fachadas con un enfoque técnico y duradero. El objetivo es resolver el origen del problema y dejar un acabado limpio.",
+    benefitsTitle: "Qué resolvemos",
+    benefits: [
+      {
+        title: "Filtraciones y goteras",
+        text: "Localizamos los puntos críticos y tratamos juntas, fisuras y encuentros que permiten la entrada de agua.",
+      },
+      {
+        title: "Terrazas, tejados y fachadas",
+        text: "Preparamos el soporte y aplicamos el sistema de impermeabilización adecuado a cada superficie.",
+      },
+      {
+        title: "Acabado duradero",
+        text: "Buscamos una solución funcional que se integre con la estética de la vivienda o el negocio.",
+      },
+    ],
+    steps: [
+      {
+        title: "Diagnóstico",
+        text: "Revisamos el soporte, los sumideros, las juntas y el origen de la entrada de agua.",
+      },
+      {
+        title: "Preparación",
+        text: "Limpiamos y preparamos la superficie para que el sistema se adhiera correctamente.",
+      },
+      {
+        title: "Impermeabilización",
+        text: "Sellamos los puntos críticos y aplicamos el sistema adecuado al tipo de superficie.",
+      },
+      {
+        title: "Acabado final",
+        text: "Revisamos el resultado y dejamos la superficie limpia y protegida.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Cuándo conviene impermeabilizar una terraza o fachada?",
+        answer:
+          "Cuando aparecen filtraciones, humedades, juntas deterioradas o fisuras, y también como prevención en superficies expuestas al agua y al sol.",
+      },
+      {
+        question: "¿Se puede impermeabilizar sin cambiar el pavimento?",
+        answer:
+          "Depende del estado del soporte y del sistema elegido. Lo valoramos tras revisar la superficie y explicamos las opciones disponibles.",
+      },
+      {
+        question: "¿Trabajáis en Valencia y Canarias?",
+        answer:
+          "Sí. Realizamos impermeabilización de terrazas, cubiertas, tejados y fachadas en Valencia, Gran Canaria y zonas de servicio según disponibilidad.",
+      },
+    ],
+    image: images.tejado,
+    gallery: [images.patio],
+    whatsappMessage: "Hola, necesito impermeabilizar una terraza o fachada.",
+    metaTitle:
+      "Impermeabilización de terrazas y fachadas en Valencia y Gran Canaria | Lozartico",
+    metaDescription:
+      "Impermeabilización de terrazas, cubiertas, tejados y fachadas en Valencia y Gran Canaria. Soluciones contra filtraciones, humedades y goteras.",
+    related: ["reformas-valencia", "reformas-gran-canaria"],
+  },
+  {
+    slug: "fontaneria",
+    category: "fontaneria",
+    eyebrow: "Fontanería en Valencia y Gran Canaria",
+    title: "Fontanería para viviendas, locales y fincas",
+    heroText:
+      "Renovamos y reparamos instalaciones de fontanería en baños, cocinas y comunidades. Atendemos bajantes de fincas, filtraciones y mejoras de instalación en Valencia y Gran Canaria.",
+    introTitle: "Instalaciones de fontanería bien resueltas",
+    introText:
+      "Revisamos el estado de la instalación y el origen del problema antes de proponer una solución. Trabajamos tanto en reformas completas como en reparaciones y renovaciones puntuales.",
+    benefitsTitle: "Qué hacemos",
+    benefits: [
+      {
+        title: "Baños y cocinas",
+        text: "Renovación de tuberías, aparatos sanitarios, grifería y conexiones en reformas de baño y cocina.",
+      },
+      {
+        title: "Bajantes de fincas",
+        text: "Reparación y sustitución de bajantes y elementos comunes para comunidades y administradores de fincas.",
+      },
+      {
+        title: "Filtraciones y reparaciones",
+        text: "Localizamos fugas y resolvemos filtraciones con el menor impacto posible en el espacio.",
+      },
+    ],
+    steps: [
+      {
+        title: "Consulta",
+        text: "Nos cuentas qué ocurre y en qué tipo de espacio, vivienda o comunidad.",
+      },
+      {
+        title: "Revisión",
+        text: "Comprobamos la instalación y el origen del problema.",
+      },
+      {
+        title: "Presupuesto",
+        text: "Explicamos la solución, los materiales y el coste antes de intervenir.",
+      },
+      {
+        title: "Ejecución",
+        text: "Realizamos el trabajo cuidando la limpieza y el acabado final.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Trabajáis en comunidades y fincas?",
+        answer:
+          "Sí. Atendemos bajantes, elementos comunes y reparaciones para comunidades y administradores de fincas.",
+      },
+      {
+        question: "¿Hacéis fontanería en reformas completas?",
+        answer:
+          "Sí. Coordinamos la fontanería con albañilería, alicatado, electricidad y acabados en reformas de baños y cocinas.",
+      },
+      {
+        question: "¿En qué zonas trabajáis?",
+        answer:
+          "Trabajamos en Valencia y Gran Canaria. Escríbenos con la ubicación para confirmar disponibilidad.",
+      },
+    ],
+    image: images.bano2,
+    gallery: [images.bano1],
+    whatsappMessage: "Hola, quiero presupuesto para fontanería.",
+    metaTitle: "Fontanería en Valencia y Gran Canaria | Lozartico",
+    metaDescription:
+      "Fontanería para viviendas, locales y fincas en Valencia y Gran Canaria. Baños, cocinas, bajantes, filtraciones y renovación de instalaciones.",
+    related: ["reformas-valencia", "reformas-gran-canaria"],
+  },
+  {
+    slug: "electricidad",
+    category: "electricidad",
+    eyebrow: "Electricidad en Valencia y Gran Canaria",
+    title: "Electricidad para viviendas, locales y empresas",
+    heroText:
+      "Instalaciones eléctricas y mejoras de seguridad para viviendas, locales y empresas. Trabajamos acometidas industriales y residenciales, cuadros de potencia y renovación de instalaciones.",
+    introTitle: "Instalaciones seguras y bien dimensionadas",
+    introText:
+      "Analizamos la instalación existente y las necesidades de uso para proponer una solución segura. Un cuadro bien dimensionado y una instalación ordenada son la base de cualquier reforma.",
+    benefitsTitle: "Qué hacemos",
+    benefits: [
+      {
+        title: "Acometidas",
+        text: "Acometidas industriales y residenciales adaptadas a la potencia y al uso previsto.",
+      },
+      {
+        title: "Cuadros de potencia",
+        text: "Instalación, renovación y organización de cuadros eléctricos con protecciones adecuadas.",
+      },
+      {
+        title: "Instalaciones interiores",
+        text: "Puntos de luz, tomas, iluminación y mejoras eléctricas en reformas de viviendas y locales.",
+      },
+    ],
+    steps: [
+      {
+        title: "Consulta",
+        text: "Nos cuentas qué necesitas y qué tipo de espacio o instalación tienes.",
+      },
+      {
+        title: "Revisión",
+        text: "Comprobamos la instalación, la potencia y las condiciones de seguridad.",
+      },
+      {
+        title: "Propuesta",
+        text: "Definimos el trabajo, los materiales y el presupuesto.",
+      },
+      {
+        title: "Ejecución",
+        text: "Realizamos la instalación y dejamos el espacio ordenado y seguro.",
+      },
+    ],
+    faqs: [
+      {
+        question: "¿Hacéis acometidas industriales?",
+        answer:
+          "Sí. Trabajamos acometidas industriales y residenciales, además de cuadros de potencia y mejoras de instalación.",
+      },
+      {
+        question: "¿Coordináis la electricidad con una reforma?",
+        answer:
+          "Sí. Integramos la instalación eléctrica en el plan de reforma para coordinar puntos, cuadro y acabados.",
+      },
+      {
+        question: "¿En qué zonas trabajáis?",
+        answer:
+          "Trabajamos en Valencia y Gran Canaria. Escríbenos con la ubicación y el tipo de instalación.",
+      },
+    ],
+    image: images.construccion,
+    gallery: [],
+    whatsappMessage: "Hola, quiero presupuesto para electricidad.",
+    metaTitle: "Electricidad en Valencia y Gran Canaria | Lozartico",
+    metaDescription:
+      "Electricidad para viviendas, locales y empresas en Valencia y Gran Canaria. Acometidas industriales y residenciales, cuadros de potencia e instalaciones.",
+    related: ["reformas-valencia", "reformas-gran-canaria"],
+  },
   {
     slug: "aire-acondicionado-valencia",
     category: "climatizacion",
@@ -171,8 +546,8 @@ export const services: Service[] = [
         text: "Una opción eficiente para dormitorios, salones, despachos y estancias que necesitan climatización individual.",
       },
       {
-        title: "Sistemas multisplit",
-        text: "Climatización coordinada para varias estancias, con una instalación limpia y adaptada al espacio disponible.",
+        title: "Sistemas por conductos",
+        text: "Climatización integrada para varias estancias, con una instalación limpia y adaptada al espacio disponible.",
       },
       {
         title: "Estudio y presupuesto",
@@ -201,7 +576,7 @@ export const services: Service[] = [
       {
         question: "¿Qué tipo de aire acondicionado me conviene?",
         answer:
-          "Depende del número de estancias, los metros y el uso. Un split es práctico para una habitación; un multisplit permite climatizar varias zonas con una unidad exterior.",
+          "Depende del número de estancias, los metros y el uso. Un split es práctico para una habitación; un sistema por conductos permite climatizar varias zonas de forma integrada.",
       },
       {
         question: "¿Estudiáis el espacio antes de presupuestar?",
@@ -216,10 +591,12 @@ export const services: Service[] = [
     ],
     image: images.aire,
     gallery: [],
-    whatsappMessage: "Hola, quiero presupuesto para aire acondicionado en Valencia.",
-    metaTitle: "Aire acondicionado en Valencia | Instalación y climatización | Lozartico",
+    whatsappMessage:
+      "Hola, quiero presupuesto para aire acondicionado en Valencia.",
+    metaTitle:
+      "Aire acondicionado en Valencia | Instalación y climatización | Lozartico",
     metaDescription:
-      "Instalación de aire acondicionado en Valencia para viviendas, oficinas y locales. Split, multisplit y climatización adaptada al espacio. Presupuesto por WhatsApp.",
+      "Instalación de aire acondicionado en Valencia para viviendas, oficinas y locales. Split, conductos y climatización adaptada al espacio. Presupuesto por WhatsApp.",
     related: ["aire-acondicionado-gran-canaria", "reformas-valencia"],
   },
   {
@@ -239,7 +616,7 @@ export const services: Service[] = [
         text: "Una opción práctica para climatizar dormitorios, salones y espacios individuales con una instalación adaptada.",
       },
       {
-        title: "Sistemas multisplit",
+        title: "Sistemas por conductos",
         text: "Para varias habitaciones o zonas que necesitan climatización coordinada y una instalación limpia.",
       },
       {
@@ -274,7 +651,7 @@ export const services: Service[] = [
       {
         question: "¿Qué solución necesito para varias habitaciones?",
         answer:
-          "Un multisplit suele ser una buena opción cuando se quieren climatizar varias estancias con una sola unidad exterior. Lo valoramos según el espacio.",
+          "Un sistema por conductos o multisplit suele ser una buena opción cuando se quieren climatizar varias estancias. Lo valoramos según el espacio.",
       },
       {
         question: "¿Cómo pido presupuesto?",
@@ -284,215 +661,13 @@ export const services: Service[] = [
     ],
     image: images.aire,
     gallery: [],
-    whatsappMessage: "Hola, quiero presupuesto para aire acondicionado en Gran Canaria.",
-    metaTitle: "Aire acondicionado en Gran Canaria | Instalación y climatización | Lozartico",
+    whatsappMessage:
+      "Hola, quiero presupuesto para aire acondicionado en Gran Canaria.",
+    metaTitle:
+      "Aire acondicionado en Gran Canaria | Instalación y climatización | Lozartico",
     metaDescription:
-      "Instalación de aire acondicionado en Las Palmas y Gran Canaria para viviendas, oficinas y locales. Soluciones split y multisplit. Presupuesto por WhatsApp.",
+      "Instalación de aire acondicionado en Las Palmas y Gran Canaria para viviendas, oficinas y locales. Soluciones split y conductos. Presupuesto por WhatsApp.",
     related: ["aire-acondicionado-valencia", "reformas-gran-canaria"],
-  },
-  {
-    slug: "reformas-valencia",
-    category: "reformas",
-    eyebrow: "Construcción y reformas en Valencia",
-    title: "Reformas integrales en Valencia",
-    heroText:
-      "Reformas integrales para viviendas y locales, con especial atención a baños, cocinas, patios y distribución de espacios. Coordinamos el proyecto para que el resultado sea funcional y duradero.",
-    introTitle: "Una obra bien planificada empieza antes de levantar nada",
-    introText:
-      "Analizamos el estado del espacio y el objetivo de la reforma para definir los trabajos necesarios, los materiales y los acabados. La coordinación es clave para que cada parte de la obra tenga sentido.",
-    benefitsTitle: "Qué podemos reformar",
-    benefits: [
-      {
-        title: "Reformas de viviendas",
-        text: "Transformación de espacios interiores para mejorar distribución, acabados, funcionalidad y confort.",
-      },
-      {
-        title: "Baños y cocinas",
-        text: "Reformas completas con demolición, revestimientos, instalaciones y montaje según el proyecto.",
-      },
-      {
-        title: "Patios y exteriores",
-        text: "Pavimentos, impermeabilización y acabados para renovar espacios exteriores y prepararlos para su uso diario.",
-      },
-    ],
-    steps: [
-      {
-        title: "Visita y medición",
-        text: "Revisamos el estado del inmueble, los metros y las necesidades de la reforma.",
-      },
-      {
-        title: "Planificación",
-        text: "Definimos trabajos, materiales, acabados y el orden de la obra.",
-      },
-      {
-        title: "Ejecución",
-        text: "Coordinamos los oficios y cuidamos la limpieza y los detalles durante el proceso.",
-      },
-      {
-        title: "Entrega",
-        text: "Revisamos el resultado contigo y resolvemos los últimos ajustes.",
-      },
-    ],
-    faqs: [
-      {
-        question: "¿Qué incluye una reforma integral?",
-        answer:
-          "Depende del estado del inmueble y del objetivo. Puede incluir demolición, albañilería, instalaciones, revestimientos, carpintería y acabados.",
-      },
-      {
-        question: "¿Hacéis reformas de baños y cocinas?",
-        answer:
-          "Sí. Trabajamos reformas completas de baños y cocinas, coordinando fontanería, electricidad, revestimientos y montaje.",
-      },
-      {
-        question: "¿Cómo se planifica la obra?",
-        answer:
-          "Primero visitamos el espacio y definimos el alcance. Después preparamos el presupuesto y organizamos los trabajos para minimizar molestias.",
-      },
-    ],
-    image: images.bano,
-    gallery: [images.armario, images.habitacion],
-    whatsappMessage: "Hola, quiero presupuesto para una reforma en Valencia.",
-    metaTitle: "Reformas integrales en Valencia | Baños, cocinas y patios | Lozartico",
-    metaDescription:
-      "Reformas integrales en Valencia para viviendas y locales. Reformas de baños, cocinas, patios y espacios interiores con planificación y acabados duraderos.",
-    related: ["reformas-gran-canaria", "impermeabilizacion-terrazas"],
-  },
-  {
-    slug: "reformas-gran-canaria",
-    category: "reformas",
-    eyebrow: "Construcción y reformas en Gran Canaria",
-    title: "Reformas integrales en Gran Canaria",
-    heroText:
-      "Reformas integrales y renovación de viviendas y locales en Las Palmas de Gran Canaria y otros puntos de la isla, con atención a la planificación, las instalaciones y los acabados.",
-    introTitle: "Espacios renovados para vivir y trabajar mejor",
-    introText:
-      "Adaptamos los trabajos al estado del inmueble y al uso previsto, desde una reforma de baño hasta una renovación más completa. Materiales, ventilación y exposición solar son factores clave en Canarias.",
-    benefitsTitle: "Reformas para cada necesidad",
-    benefits: [
-      {
-        title: "Reforma de vivienda",
-        text: "Actualización de distribución, revestimientos, instalaciones y acabados para conseguir un espacio cómodo.",
-      },
-      {
-        title: "Baños y cocinas",
-        text: "Renovación de superficies, instalaciones y elementos de uso diario, cuidando diseño y resistencia.",
-      },
-      {
-        title: "Interiores y exteriores",
-        text: "Mejoras en habitaciones, patios y otros espacios para adaptar el inmueble a nuevas necesidades.",
-      },
-    ],
-    steps: [
-      {
-        title: "Visita y medición",
-        text: "Revisamos el estado del inmueble y escuchamos qué quieres conseguir.",
-      },
-      {
-        title: "Planificación",
-        text: "Definimos trabajos, materiales y acabados adaptados al clima y al uso.",
-      },
-      {
-        title: "Ejecución",
-        text: "Coordinamos la obra y mantenemos el espacio ordenado durante los trabajos.",
-      },
-      {
-        title: "Entrega",
-        text: "Revisamos el resultado contigo y cerramos los detalles finales.",
-      },
-    ],
-    faqs: [
-      {
-        question: "¿Reformáis viviendas y locales en Gran Canaria?",
-        answer:
-          "Sí. Trabajamos en Las Palmas de Gran Canaria y otros puntos de la isla, tanto en viviendas como en locales.",
-      },
-      {
-        question: "¿Qué materiales convienen en Canarias?",
-        answer:
-          "La elección depende del uso y la exposición. Valoramos humedad, ventilación, sol y resistencia para proponer materiales duraderos.",
-      },
-      {
-        question: "¿Cómo empiezo una reforma?",
-        answer:
-          "Escríbenos con la ubicación, el tipo de espacio y lo que quieres cambiar. Concertamos una visita y preparamos el presupuesto.",
-      },
-    ],
-    image: images.armario,
-    gallery: [images.habitacion],
-    whatsappMessage: "Hola, quiero presupuesto para una reforma en Gran Canaria.",
-    metaTitle: "Reformas integrales en Gran Canaria | Viviendas y locales | Lozartico",
-    metaDescription:
-      "Reformas integrales en Gran Canaria para viviendas y locales. Baños, cocinas, interiores y exteriores con planificación y acabados duraderos.",
-    related: ["reformas-valencia", "aire-acondicionado-gran-canaria"],
-  },
-  {
-    slug: "impermeabilizacion-terrazas",
-    category: "impermeabilizacion",
-    eyebrow: "Terrazas, cubiertas y patios",
-    title: "Impermeabilización de terrazas",
-    heroText:
-      "Protegemos terrazas, cubiertas y patios con soluciones profesionales, duraderas y adaptadas al estado de cada superficie en Valencia y Gran Canaria.",
-    introTitle: "Soluciones contra filtraciones, humedades y goteras",
-    introText:
-      "Aplicamos soluciones profesionales para terrazas, cubiertas y patios con un enfoque estético, técnico y duradero. El objetivo es resolver el origen del problema y dejar un acabado limpio.",
-    benefitsTitle: "Qué resolvemos",
-    benefits: [
-      {
-        title: "Filtraciones y goteras",
-        text: "Localizamos los puntos críticos y tratamos juntas, fisuras y encuentros que permiten la entrada de agua.",
-      },
-      {
-        title: "Humedades",
-        text: "Preparamos el soporte y aplicamos el sistema de impermeabilización adecuado a cada superficie.",
-      },
-      {
-        title: "Acabado duradero",
-        text: "Buscamos una solución funcional que se integre con la estética de la vivienda o el negocio.",
-      },
-    ],
-    steps: [
-      {
-        title: "Diagnóstico",
-        text: "Revisamos el soporte, los sumideros, las juntas y el origen de la entrada de agua.",
-      },
-      {
-        title: "Preparación",
-        text: "Limpiamos y preparamos la superficie para que el sistema se adhiera correctamente.",
-      },
-      {
-        title: "Impermeabilización",
-        text: "Sellamos los puntos críticos y aplicamos el sistema adecuado al tipo de terraza.",
-      },
-      {
-        title: "Acabado final",
-        text: "Revisamos el resultado y dejamos la superficie limpia y protegida.",
-      },
-    ],
-    faqs: [
-      {
-        question: "¿Cuándo conviene impermeabilizar una terraza?",
-        answer:
-          "Cuando aparecen filtraciones, humedades, juntas deterioradas o fisuras, y también como prevención en superficies expuestas al agua y al sol.",
-      },
-      {
-        question: "¿Se puede impermeabilizar sin cambiar el pavimento?",
-        answer:
-          "Depende del estado del soporte y del sistema elegido. Lo valoramos tras revisar la terraza y explicamos las opciones disponibles.",
-      },
-      {
-        question: "¿Trabajáis en Valencia y Canarias?",
-        answer:
-          "Sí. Realizamos impermeabilización de terrazas, cubiertas y patios en Valencia, Gran Canaria y zonas de servicio según disponibilidad.",
-      },
-    ],
-    image: images.patio,
-    gallery: [],
-    whatsappMessage: "Hola, necesito impermeabilizar una terraza.",
-    metaTitle: "Impermeabilización de terrazas en Valencia y Gran Canaria | Lozartico",
-    metaDescription:
-      "Impermeabilización de terrazas, cubiertas y patios en Valencia y Gran Canaria. Soluciones contra filtraciones, humedades y goteras con acabados duraderos.",
-    related: ["reformas-valencia", "reformas-gran-canaria"],
   },
 ];
 

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { CSSProperties } from "react";
 
 import { whatsappHref } from "@/lib/contact";
@@ -9,29 +9,29 @@ const zones = [
   {
     index: "01",
     name: "Valencia",
-    text: "Climatización, reformas e impermeabilización en Valencia y municipios de la provincia.",
+    text: "Construcción, reformas e instalaciones en Valencia y municipios de la provincia.",
     links: [
-      { label: "Aire acondicionado", href: "/aire-acondicionado-valencia" },
       { label: "Reformas", href: "/reformas-valencia" },
       {
         label: "Impermeabilización",
         href: "/impermeabilizacion-terrazas",
       },
+      { label: "Aire acondicionado", href: "/aire-acondicionado-valencia" },
     ],
   },
   {
     index: "02",
     name: "Gran Canaria",
-    text: "Aire acondicionado, reformas y terrazas en Las Palmas de Gran Canaria y otros puntos de la isla.",
+    text: "Reformas, construcción e instalaciones en Las Palmas de Gran Canaria y otros puntos de la isla.",
     links: [
-      {
-        label: "Aire acondicionado",
-        href: "/aire-acondicionado-gran-canaria",
-      },
       { label: "Reformas", href: "/reformas-gran-canaria" },
       {
         label: "Impermeabilización",
         href: "/impermeabilizacion-terrazas",
+      },
+      {
+        label: "Aire acondicionado",
+        href: "/aire-acondicionado-gran-canaria",
       },
     ],
   },
@@ -94,7 +94,9 @@ export function ZonesSection() {
             </p>
             <a
               className="btn btn--primary zone-card__cta"
-              href={whatsappHref("Hola, mi proyecto está en otra zona. ¿Trabajáis ahí?")}
+              href={whatsappHref(
+                "Hola, mi proyecto está en otra zona. ¿Trabajáis ahí?",
+              )}
               target="_blank"
               rel="noopener noreferrer"
             >

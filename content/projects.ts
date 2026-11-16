@@ -1,9 +1,9 @@
-export type Project = {
+﻿export type Project = {
   slug: string;
   title: string;
   category: string;
   location: string;
-  year: string;
+  year?: string;
   description: string;
   image: {
     src: string;
@@ -19,14 +19,13 @@ export const projects: Project[] = [
     title: "Baño moderno completo",
     category: "Reforma de baño",
     location: "Valencia",
-    year: "2024",
     description:
       "Reforma integral de baño con alicatado de gran formato, fontanería nueva, mampara de cristal y acabados de alta calidad.",
     image: {
-      src: "/images/proyecto-bano.webp",
+      src: "/images/reforma-bano-1.webp",
       alt: "Baño moderno reformado por Lozartico en Valencia",
       width: 1080,
-      height: 1349,
+      height: 1920,
     },
   },
   {
@@ -34,7 +33,6 @@ export const projects: Project[] = [
     title: "Armario empotrado a medida",
     category: "Reforma de habitación",
     location: "Islas Canarias",
-    year: "2023",
     description:
       "Diseño y montaje de armario empotrado con puertas de espejo, distribución interior personalizada y renovación de paredes y suelo.",
     image: {
@@ -49,7 +47,6 @@ export const projects: Project[] = [
     title: "Habitación azul y blanco",
     category: "Diseño de interiores",
     location: "Islas Canarias",
-    year: "2023",
     description:
       "Reforma completa de dormitorio con nueva distribución, pintura de alta calidad, iluminación LED y mobiliario integrado.",
     image: {
@@ -64,7 +61,6 @@ export const projects: Project[] = [
     title: "Reforma de patio exterior",
     category: "Exteriores",
     location: "Valencia",
-    year: "2024",
     description:
       "Reforma de patio con pavimento antideslizante, impermeabilización, mejora del desagüe y acabados resistentes al exterior.",
     image: {
@@ -72,6 +68,20 @@ export const projects: Project[] = [
       alt: "Patio exterior reformado e impermeabilizado por Lozartico en Valencia",
       width: 1080,
       height: 1349,
+    },
+  },
+  {
+    slug: "impermeabilizacion-tejado",
+    title: "Impermeabilización de tejado",
+    category: "Impermeabilización",
+    location: "Gran Canaria",
+    description:
+      "Tratamiento de cubierta y tejado para resolver filtraciones y proteger la vivienda frente a la lluvia y la humedad.",
+    image: {
+      src: "/images/impermeabilizacion-tejado.webp",
+      alt: "Trabajo de impermeabilización de tejado realizado por Lozartico",
+      width: 900,
+      height: 1200,
     },
   },
 ];

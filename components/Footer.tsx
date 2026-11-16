@@ -4,22 +4,27 @@ import Link from "next/link";
 import { siteConfig } from "@/content/site";
 import { whatsappHref } from "@/lib/contact";
 import { MapPinIcon, PhoneIcon } from "./Icons";
+import { SocialLinks } from "./SocialLinks";
 
 const serviceLinks = [
+  { label: "Reformas en Valencia", href: "/reformas-valencia" },
+  { label: "Reformas en Gran Canaria", href: "/reformas-gran-canaria" },
+  { label: "Fontanería", href: "/fontaneria" },
+  { label: "Electricidad", href: "/electricidad" },
+  {
+    label: "Impermeabilización de terrazas y fachadas",
+    href: "/impermeabilizacion-terrazas",
+  },
   { label: "Aire acondicionado en Valencia", href: "/aire-acondicionado-valencia" },
   {
     label: "Aire acondicionado en Gran Canaria",
     href: "/aire-acondicionado-gran-canaria",
   },
-  { label: "Reformas en Valencia", href: "/reformas-valencia" },
-  { label: "Reformas en Gran Canaria", href: "/reformas-gran-canaria" },
-  {
-    label: "Impermeabilización de terrazas",
-    href: "/impermeabilizacion-terrazas",
-  },
 ];
 
 const companyLinks = [
+  { label: "Empresa", href: "/#empresa" },
+  { label: "Acreditaciones", href: "/#acreditaciones" },
   { label: "Proyectos", href: "/#proyectos" },
   { label: "Opiniones", href: "/#opiniones" },
   { label: "Preguntas frecuentes", href: "/#preguntas" },
@@ -43,25 +48,11 @@ export function Footer() {
             />
           </Link>
           <p className="footer__description">
-            Climatización, reformas e impermeabilización para viviendas y
-            locales en Valencia y Gran Canaria. Trabajo cuidado y trato directo.
+            Construcción y reformas integrales en Valencia y Gran Canaria.
+            Alicatados, pintura, impermeabilización, fontanería, electricidad y
+            climatización con trato directo.
           </p>
-          <nav className="footer__social" aria-label="Redes sociales">
-            <a
-              href={siteConfig.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-            </a>
-            <a
-              href={siteConfig.tiktokUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              TikTok
-            </a>
-          </nav>
+          <SocialLinks className="footer__social" />
         </div>
 
         <div className="footer__col">

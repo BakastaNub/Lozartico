@@ -16,10 +16,13 @@ export function localBusinessSchema() {
 
   return {
     "@context": "https://schema.org",
-    "@type": "HVACBusiness",
+    "@type": "GeneralContractor",
     "@id": url ? `${url}#organization` : undefined,
     name: siteConfig.name,
+    legalName: siteConfig.legalName,
     alternateName: siteConfig.shortName,
+    taxID: siteConfig.nif,
+    foundingDate: siteConfig.foundingDate,
     description: siteConfig.description,
     url,
     telephone: siteConfig.phone,
@@ -27,8 +30,27 @@ export function localBusinessSchema() {
     image: absoluteUrl("/images/og-cover.jpg"),
     logo: absoluteUrl("/images/logo-lozartico-nav.webp"),
     priceRange: "$$",
+    knowsAbout: [
+      "Reformas integrales",
+      "Construcción",
+      "Alicatados",
+      "Pintura",
+      "Impermeabilización de terrazas y fachadas",
+      "Fontanería",
+      "Electricidad",
+      "Climatización",
+    ],
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        name: "Sistema de Gestión Ambiental ISO 14001:2015",
+        credentialCategory: "certification",
+      },
+    ],
     address: {
       "@type": "PostalAddress",
+      streetAddress: siteConfig.address.street,
+      postalCode: siteConfig.address.postalCode,
       addressLocality: siteConfig.address.locality,
       addressRegion: siteConfig.address.region,
       addressCountry: siteConfig.address.country,
@@ -100,7 +122,7 @@ export function serviceSchema(service: Service) {
     description: service.metaDescription,
     url: absoluteUrl(`/${service.slug}/`),
     provider: {
-      "@type": "HVACBusiness",
+      "@type": "GeneralContractor",
       name: siteConfig.name,
       telephone: siteConfig.phone,
       email: siteConfig.email,

@@ -10,6 +10,7 @@ import {
   WhatsAppIcon,
 } from "./Icons";
 import { SectionHeading } from "./SectionHeading";
+import { SocialLinks } from "./SocialLinks";
 
 type ContactSectionProps = {
   service?: string;
@@ -18,7 +19,7 @@ type ContactSectionProps = {
 export function ContactSection({ service }: ContactSectionProps) {
   const message = service
     ? `Hola, quiero solicitar un presupuesto para ${service}.`
-    : "Hola, quiero solicitar un presupuesto.";
+    : "Hola, quiero presupuesto para una reforma o instalación.";
 
   return (
     <section className="section section--navy contact" id="contacto">
@@ -27,7 +28,9 @@ export function ContactSection({ service }: ContactSectionProps) {
           <SectionHeading
             eyebrow="Contacto"
             title={
-              service ? "Hablemos de tu proyecto" : "Cuéntanos qué necesitas"
+              service
+                ? "Hablemos de tu proyecto"
+                : "Cuéntanos tu reforma o instalación"
             }
             text="Escríbenos por WhatsApp o email con la zona y los detalles del proyecto. Te respondemos con los siguientes pasos, sin compromiso."
           />
@@ -55,6 +58,11 @@ export function ContactSection({ service }: ContactSectionProps) {
               </div>
             </li>
           </ul>
+
+          <div className="contact__social">
+            <span className="contact__social-label">Síguenos</span>
+            <SocialLinks label="Síguenos en redes sociales" />
+          </div>
 
           <p className="contact__note">
             Sin formularios. Sin esperas innecesarias. Hablas directamente con

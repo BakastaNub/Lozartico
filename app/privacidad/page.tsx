@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Política de privacidad",
   robots: indexableRobots,
   description:
-    "Cómo trata Lozartico SL los datos personales recibidos a través de WhatsApp, email o teléfono.",
+    "Cómo trata Lozartico Servicios Integrales, S.L.U. los datos personales recibidos a través de WhatsApp, email o teléfono.",
   alternates: canonical("/privacidad/"),
 };
 
@@ -18,9 +18,11 @@ export default function PrivacidadPage() {
       <h2>1. Responsable del tratamiento</h2>
       <p>
         El responsable del tratamiento de los datos personales es{" "}
-        <strong>{siteConfig.legalName}</strong>, con domicilio profesional en{" "}
-        {siteConfig.address.locality} ({siteConfig.address.region}), España.
-        Puedes contactar en{" "}
+        <strong>{siteConfig.legalName}</strong>, con NIF{" "}
+        <strong>{siteConfig.nif}</strong> y domicilio social en{" "}
+        {siteConfig.address.street}, {siteConfig.address.postalCode}{" "}
+        {siteConfig.address.locality} ({siteConfig.address.municipality}),
+        {siteConfig.address.region}, España. Puedes contactar en{" "}
         <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>.
       </p>
 

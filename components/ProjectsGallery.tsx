@@ -110,7 +110,8 @@ export function ProjectsGallery({ projects }: ProjectsGalleryProps) {
               </span>
               <span className="project-card__body">
                 <span className="project-card__meta">
-                  {project.location} · {project.year}
+                  {project.location}
+                  {project.year ? ` · ${project.year}` : ""}
                 </span>
                 <span className="project-card__title">{project.title}</span>
                 <span className="project-card__text">{project.description}</span>
@@ -157,8 +158,8 @@ export function ProjectsGallery({ projects }: ProjectsGalleryProps) {
             <div className="lightbox__info">
               <div>
                 <span className="lightbox__meta">
-                  {activeProject.category} · {activeProject.location} ·{" "}
-                  {activeProject.year}
+                  {activeProject.category} · {activeProject.location}
+                  {activeProject.year ? ` · ${activeProject.year}` : ""}
                 </span>
                 <h3>{activeProject.title}</h3>
                 <p>{activeProject.description}</p>

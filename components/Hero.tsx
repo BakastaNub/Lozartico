@@ -13,12 +13,11 @@ export function Hero() {
         <div className="hero__content">
           <span className="hero__tag" data-reveal>
             <span className="hero__tag-dot" aria-hidden="true" />
-            Climatización · Reformas · Impermeabilización
+            Reformas · Construcción · Instalaciones
           </span>
 
           <h1 data-reveal style={{ "--reveal-delay": "60ms" } as CSSProperties}>
-            Aire acondicionado, reformas e{" "}
-            <em>impermeabilización</em> en Valencia y Gran Canaria
+            Reformas y construcción en <em>Valencia y Gran Canaria</em>
           </h1>
 
           <p
@@ -26,9 +25,9 @@ export function Hero() {
             data-reveal
             style={{ "--reveal-delay": "120ms" } as CSSProperties}
           >
-            Más de 3 años cuidando el confort y los espacios de nuestros
-            clientes. Instalaciones limpias, reformas bien planificadas y
-            terrazas protegidas de verdad.
+            Reformas integrales, alicatados, pintura e impermeabilización de
+            terrazas y fachadas. También fontanería, electricidad y
+            climatización, con un solo equipo coordinando la obra.
           </p>
 
           <div
@@ -38,7 +37,7 @@ export function Hero() {
           >
             <a
               className="btn btn--primary"
-              href={whatsappHref("Hola, quiero solicitar un presupuesto.")}
+              href={whatsappHref("Hola, quiero presupuesto para una reforma.")}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -65,16 +64,16 @@ export function Hero() {
             style={{ "--reveal-delay": "300ms" } as CSSProperties}
           >
             <div className="hero__stat">
-              <strong>+3 años</strong>
-              <span>de experiencia</span>
+              <strong>Desde 2024</strong>
+              <span>empresa constituida</span>
             </div>
             <div className="hero__stat">
               <strong>2 zonas</strong>
               <span>Valencia y Canarias</span>
             </div>
             <div className="hero__stat">
-              <strong>Trato directo</strong>
-              <span>sin intermediarios</span>
+              <strong>Pública y privada</strong>
+              <span>obra y licitaciones</span>
             </div>
           </div>
         </div>
@@ -88,10 +87,10 @@ export function Hero() {
           <div className="hero__image-wrap">
             <Image
               className="hero__image"
-              src="/images/hero-aire-acondicionado.webp"
-              alt="Técnico de Lozartico instalando y manteniendo aire acondicionado"
-              width={1080}
-              height={1440}
+              src="/images/construccion.webp"
+              alt="Obra de construcción y reforma realizada por Lozartico"
+              width={900}
+              height={1200}
               priority
               sizes="(max-width: 900px) 100vw, 46vw"
             />

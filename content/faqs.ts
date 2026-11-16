@@ -5,28 +5,38 @@ export type FAQ = {
 
 export const homeFaqs: FAQ[] = [
   {
-    question: "¿Cuánto cuesta instalar un aire acondicionado en Valencia?",
+    question: "¿Hacéis reformas integrales en Valencia y Gran Canaria?",
     answer:
-      "El precio depende de la potencia, el tipo de equipo y la instalación necesaria. Estudiamos el espacio y te damos un presupuesto gratuito y sin compromiso por WhatsApp o email.",
+      "Sí. Trabajamos reformas integrales de viviendas, locales y comunidades en Valencia y Gran Canaria, coordinando albañilería, alicatados, pintura, fontanería, electricidad e impermeabilización.",
   },
   {
-    question: "¿Instaláis aire acondicionado en Las Palmas de Gran Canaria?",
+    question: "¿Qué incluye una reforma de baño?",
     answer:
-      "Sí. Trabajamos en Las Palmas de Gran Canaria y en distintos puntos de la isla, con soluciones split, multisplit y climatización para viviendas, oficinas y locales.",
+      "Una reforma de baño puede incluir demolición, renovación de fontanería y electricidad, impermeabilización, alicatado, sanitarios, grifería, muebles y acabados. Adaptamos el alcance al estado real del baño.",
   },
   {
-    question: "¿Hacéis reformas integrales de baños en Valencia?",
+    question: "¿Impermeabilizáis terrazas, tejados y fachadas?",
     answer:
-      "Sí. Coordinamos la reforma completa: demolición, impermeabilización, alicatado, fontanería, muebles y acabados, adaptando el proyecto al estado real del baño.",
+      "Sí. Revisamos el origen de las filtraciones y aplicamos soluciones de impermeabilización para terrazas, cubiertas, tejados y fachadas, con acabados adaptados a cada superficie.",
   },
   {
-    question: "¿Cuánto tarda una reforma integral de baño?",
+    question: "¿Trabajáis con administradores de fincas y empresas?",
     answer:
-      "Una reforma de baño estándar suele tardar entre una y dos semanas laborables, según el tamaño, los materiales y los trabajos de instalación necesarios.",
+      "Sí. Atendemos comunidades, bajantes, zonas comunes y reformas para empresas privadas, además de trabajos para particulares.",
   },
   {
-    question: "¿Cómo pido presupuesto para una instalación o una reforma?",
+    question: "¿Tenéis experiencia en licitaciones públicas?",
     answer:
-      "Puedes escribirnos por WhatsApp o enviarnos un email con la zona, el servicio que necesitas y los detalles del proyecto. Te respondemos con los siguientes pasos.",
+      "Contamos con experiencia y documentación para licitaciones de ayuntamientos y Ministerio de Defensa. Podemos facilitar las acreditaciones y coberturas disponibles para cada procedimiento.",
+  },
+  {
+    question: "¿Instaláis aire acondicionado split y conductos?",
+    answer:
+      "Sí. Instalamos equipos split y sistemas por conductos para viviendas, oficinas y locales, y realizamos el mantenimiento posterior de los equipos.",
+  },
+  {
+    question: "¿Cómo pido presupuesto?",
+    answer:
+      "Escríbenos por WhatsApp o email con la zona, el servicio que necesitas y los detalles del proyecto. Te respondemos con los siguientes pasos y, si hace falta, concertamos una visita.",
   },
 ];

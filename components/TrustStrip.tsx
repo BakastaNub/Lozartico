@@ -26,8 +26,8 @@ export function TrustStrip() {
             <CheckIcon size={22} />
           </span>
           <span>
-            <strong>+3 años de experiencia</strong>
-            <span>Trabajo cuidado y directo</span>
+            <strong>Desde 2024</strong>
+            <span>Construcción y reformas</span>
           </span>
         </div>
 

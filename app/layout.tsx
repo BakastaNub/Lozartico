@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import { Archivo, Inter } from "next/font/google";
 
 import { Footer } from "@/components/Footer";
@@ -26,24 +26,27 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   ...(siteConfig.url ? { metadataBase: new URL(siteConfig.url) } : {}),
   title: {
-    default: "Lozartico | Aire acondicionado, reformas e impermeabilización",
+    default:
+      "Lozartico | Reformas y construcción en Valencia y Gran Canaria",
     template: "%s | Lozartico",
   },
   description:
-    "Instalación de aire acondicionado, reformas integrales e impermeabilización de terrazas en Valencia y Las Palmas de Gran Canaria. Presupuesto directo por WhatsApp.",
+    "Reformas integrales, alicatados, pintura, impermeabilización, fontanería, electricidad y climatización en Valencia y Gran Canaria. Presupuesto directo por WhatsApp.",
   applicationName: siteConfig.shortName,
   authors: [{ name: siteConfig.legalName }],
   creator: siteConfig.legalName,
   publisher: siteConfig.legalName,
   category: "construction",
   keywords: [
-    "aire acondicionado Valencia",
-    "aire acondicionado Las Palmas",
-    "instalación aire acondicionado Gran Canaria",
     "reformas Valencia",
     "reformas Gran Canaria",
-    "impermeabilización de terrazas",
-    "reforma de baños",
+    "construcción Valencia",
+    "construcción Gran Canaria",
+    "impermeabilización de terrazas y fachadas",
+    "fontanería Valencia",
+    "electricidad Valencia",
+    "aire acondicionado Valencia",
+    "aire acondicionado Las Palmas",
     "Lozartico",
   ],
   icons: {
@@ -68,16 +71,16 @@ export const metadata: Metadata = {
     locale: "es_ES",
     siteName: siteConfig.shortName,
     ...(siteConfig.url ? { url: "/" } : {}),
-    title: "Lozartico | Aire acondicionado, reformas e impermeabilización",
+    title: "Lozartico | Reformas y construcción en Valencia y Gran Canaria",
     description:
-      "Climatización, reformas e impermeabilización en Valencia y Gran Canaria. Trabajo cuidado, trato directo y presupuesto por WhatsApp.",
+      "Reformas, construcción, impermeabilización, fontanería, electricidad y climatización en Valencia y Gran Canaria. Trato directo y presupuesto por WhatsApp.",
     images: ogImages(),
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lozartico | Aire acondicionado, reformas e impermeabilización",
+    title: "Lozartico | Reformas y construcción en Valencia y Gran Canaria",
     description:
-      "Climatización, reformas e impermeabilización en Valencia y Gran Canaria. Presupuesto directo por WhatsApp.",
+      "Reformas, construcción, fontanería, electricidad, impermeabilización y climatización en Valencia y Gran Canaria. Presupuesto directo por WhatsApp.",
     images: ogImages()?.map((image) => image.url),
   },
 };

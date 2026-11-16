@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
+import { AboutSection } from "@/components/AboutSection";
+import { ClientsSection } from "@/components/ClientsSection";
 import { ContactSection } from "@/components/ContactSection";
+import { CredentialsSection } from "@/components/CredentialsSection";
 import { FaqSection } from "@/components/FaqSection";
 import { Hero } from "@/components/Hero";
 import { JsonLd } from "@/components/JsonLd";
@@ -26,6 +29,9 @@ export default function HomePage() {
       <TrustStrip />
       <ServicesSection />
       <ProjectsSection />
+      <AboutSection />
+      <ClientsSection />
+      <CredentialsSection />
       <ProcessSection />
       <ZonesSection />
       <ReviewsSection />
