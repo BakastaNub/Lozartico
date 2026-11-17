@@ -29,20 +29,6 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: "armario-empotrado",
-    title: "Armario empotrado a medida",
-    category: "Reforma de habitación",
-    location: "Gran Canaria",
-    description:
-      "Diseño y montaje de armario empotrado con puertas de espejo, distribución interior personalizada y renovación de paredes y suelo.",
-    image: {
-      src: "/images/proyecto-armario.webp",
-      alt: "Habitación con armario empotrado a medida reformada por Lozartico",
-      width: 1080,
-      height: 1349,
-    },
-  },
-  {
     slug: "habitacion-azul-blanco",
     title: "Habitación azul y blanco",
     category: "Diseño de interiores",
@@ -87,10 +73,10 @@ export const projects: Project[] = [
   {
     slug: "cesped-artificial",
     title: "Instalación de césped artificial",
-    category: "Exteriores",
+    category: "Césped artificial",
     location: "Valencia",
     description:
-      "Instalación de césped artificial en una zona exterior, con preparación de la base y remates cuidados.",
+      "Instalación de césped artificial en un espacio cubierto, con preparación de la base y remates cuidados.",
     image: {
       src: "/images/cesped-artificial-2.webp",
       alt: "Instalación de césped artificial realizada por Lozartico",

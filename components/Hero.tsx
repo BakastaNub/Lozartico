@@ -27,7 +27,7 @@ export function Hero() {
           >
             Reformas integrales, alicatados, pintura, suelos e
             impermeabilización. También fontanería, electricidad, climatización y
-            césped artificial, con un solo equipo coordinando la obra.
+            césped artificial, con un solo equipo ejecutando los trabajos.
           </p>
 
           <div
@@ -44,8 +44,8 @@ export function Hero() {
               <WhatsAppIcon size={19} />
               Pedir presupuesto
             </a>
-            <Link className="btn btn--light" href="#proyectos">
-              Ver proyectos
+            <Link className="btn btn--light" href="#trabajos">
+              Ver trabajos
             </Link>
           </div>
 

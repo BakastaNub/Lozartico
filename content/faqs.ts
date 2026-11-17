@@ -7,7 +7,7 @@ export const homeFaqs: FAQ[] = [
   {
     question: "¿Hacéis reformas integrales en Valencia?",
     answer:
-      "Sí. Trabajamos reformas integrales de viviendas, locales y comunidades en Valencia, coordinando albañilería, alicatados, pintura, fontanería, electricidad e impermeabilización.",
+      "Sí. Ejecutamos reformas integrales de viviendas, locales y comunidades en Valencia, con albañilería, alicatados, pintura, fontanería, electricidad e impermeabilización.",
   },
   {
     question: "¿Qué incluye una reforma de baño?",
@@ -42,6 +42,6 @@ export const homeFaqs: FAQ[] = [
   {
     question: "¿Cómo pido presupuesto?",
     answer:
-      "Escríbenos por WhatsApp o email con la zona, el servicio que necesitas y los detalles del proyecto. Te respondemos con los siguientes pasos y, si hace falta, concertamos una visita.",
+      "Escríbenos por WhatsApp o email con la zona, el servicio que necesitas y los detalles del trabajo. Te respondemos con los siguientes pasos y, si hace falta, concertamos una visita.",
   },
 ];

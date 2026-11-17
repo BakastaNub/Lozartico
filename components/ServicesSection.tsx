@@ -6,25 +6,19 @@ import { whatsappHref } from "@/lib/contact";
 import {
   ArrowRightIcon,
   ArrowUpRightIcon,
-  BoltIcon,
   BuildingIcon,
   CheckIcon,
   DropletIcon,
   HomeIcon,
-  LeafIcon,
-  SnowflakeIcon,
   WhatsAppIcon,
   WrenchIcon,
 } from "./Icons";
 import { SectionHeading } from "./SectionHeading";
 
 const serviceIcons = {
-  air: SnowflakeIcon,
   home: HomeIcon,
-  terrace: DropletIcon,
   wrench: WrenchIcon,
-  bolt: BoltIcon,
-  leaf: LeafIcon,
+  droplet: DropletIcon,
   building: BuildingIcon,
 };
 
@@ -35,11 +29,11 @@ export function ServicesSection() {
         <div className="section-head">
           <SectionHeading
             eyebrow="Servicios"
-            title="Reformas primero. Todo lo demás, coordinado."
-            text="Construcción y reformas integrales, alicatados, pintura e impermeabilización, con fontanería, electricidad y climatización cuando el proyecto lo necesita."
+            title="Cuatro servicios, una forma de trabajar"
+            text="Obra nueva, reformas, instalaciones, impermeabilización y mantenimiento. Ejecutamos cada trabajo según su alcance y las dos zonas de servicio."
           />
           <Link className="section-link" href="#contacto">
-            Hablemos de tu proyecto
+            Hablemos de tu trabajo
             <ArrowRightIcon size={18} />
           </Link>
         </div>

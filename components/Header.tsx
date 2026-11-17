@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -18,9 +18,8 @@ import {
 
 const navLinks = [
   { label: "Servicios", href: "/#servicios" },
-  { label: "Proyectos", href: "/#proyectos" },
+  { label: "Trabajos", href: "/#trabajos" },
   { label: "Empresa", href: "/#empresa" },
-  { label: "Acreditaciones", href: "/#acreditaciones" },
   { label: "Contacto", href: "/#contacto" },
 ];
 
@@ -175,3 +174,4 @@ export function Header() {
     </>
   );
 }
+

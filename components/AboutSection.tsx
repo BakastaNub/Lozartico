@@ -2,7 +2,6 @@
 import Link from "next/link";
 
 import { siteConfig } from "@/content/site";
-import { ArrowRightIcon } from "./Icons";
 import { SectionHeading } from "./SectionHeading";
 
 export function AboutSection() {
@@ -30,22 +29,25 @@ export function AboutSection() {
           </div>
           <div className="about__badge">
             <strong>Equipo +15 años</strong>
-            <span>de experiencia en construcción y reforma</span>
+            <span>de experiencia en obra y reforma</span>
           </div>
         </div>
 
         <div className="about__copy" data-reveal>
           <SectionHeading
             eyebrow="Empresa"
-            title="Un equipo que coordina la obra de principio a fin"
-            text="            Lozartico Servicios Integrales, S.L.U. trabaja en construcción, reformas e instalaciones para particulares, comunidades, empresas y licitaciones públicas, con servicio en Valencia y Gran Canaria."
+            title="Un equipo que ejecuta la obra de principio a fin"
+            text="Lozartico Servicios Integrales, S.L.U. ejecuta obra nueva, reformas, instalaciones y mantenimiento para particulares, comunidades y empresas en Valencia y Gran Canaria."
           />
 
           <p>
-            Nuestro punto de partida es entender el espacio y el uso que va a
-            tener. A partir de ahí coordinamos los oficios, los materiales y los
-            plazos para que la reforma avance con un solo interlocutor y sin
-            improvisaciones.
+            Entendemos el espacio y el uso que va a tener. A partir de ahí
+            implementamos las partidas, los materiales y los plazos para que la
+            obra avance con un solo interlocutor.
+          </p>
+
+          <p className="about__credentials">
+            ISO 14001:2015 · ROLECE · Responsabilidad civil · Prevención ajena
           </p>
 
           <dl className="about__facts">
@@ -54,26 +56,21 @@ export function AboutSection() {
               <dd>{siteConfig.legalName}</dd>
             </div>
             <div>
-              <dt>Zona de servicio</dt>
+              <dt>Zonas de servicio</dt>
               <dd>{siteConfig.zones.join(" · ")}</dd>
             </div>
             <div>
               <dt>Experiencia</dt>
               <dd>{siteConfig.experience}</dd>
             </div>
-            <div>
-              <dt>Licitaciones</dt>
-              <dd>Ayuntamientos y Ministerio de Defensa</dd>
-            </div>
           </dl>
 
           <div className="about__actions">
-            <Link className="btn btn--dark" href="#acreditaciones">
-              Ver acreditaciones
-              <ArrowRightIcon size={18} />
+            <Link className="btn btn--dark" href="#contacto">
+              Solicitar presupuesto
             </Link>
-            <Link className="btn btn--outline" href="#contacto">
-              Hablar con nosotros
+            <Link className="btn btn--outline" href="/construccion-reformas">
+              Ver servicios
             </Link>
           </div>
         </div>

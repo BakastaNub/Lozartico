@@ -151,9 +151,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               >
                 <span>
                   <MapPinIcon size={16} />
-                  {service.slug.endsWith("gran-canaria")
-                    ? "Gran Canaria"
-                    : "Valencia"}
+                  Valencia y Gran Canaria
                 </span>
                 <span>
                   <CheckIcon size={16} />
@@ -208,7 +206,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
           <SectionHeading
             eyebrow="Qué incluye"
             title={service.benefitsTitle}
-            text="Soluciones pensadas para que el resultado funcione hoy y siga funcionando con el tiempo."
+            text="Trabajos incluidos en este servicio."
           />
 
           <div className="benefits-grid">
@@ -269,7 +267,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
         <section className="section section--cream landing-gallery">
           <div className="container">
             <SectionHeading
-              eyebrow="Proyectos"
+              eyebrow="Trabajos"
               title="Trabajos realizados"
               text="Una muestra de espacios que hemos transformado."
             />

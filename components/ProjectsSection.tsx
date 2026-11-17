@@ -7,16 +7,16 @@ import { SectionHeading } from "./SectionHeading";
 
 export function ProjectsSection() {
   return (
-    <section className="section section--white projects" id="proyectos">
+    <section className="section section--white projects" id="trabajos">
       <div className="container">
         <div className="section-head">
           <SectionHeading
-            eyebrow="Proyectos"
-            title="Reformas y obra que hablan por sí solas"
-            text="Una selección de reformas, baños, espacios exteriores e impermeabilizaciones realizadas por nuestro equipo. Toca una imagen para verla con más detalle."
+            eyebrow="Trabajos"
+            title="Trabajos realizados"
+            text="Una selección de reformas, instalaciones, impermeabilización y mantenimiento ejecutados por nuestro equipo."
           />
           <Link className="section-link" href="#contacto">
-            Cuéntanos tu proyecto
+            Cuéntanos tu trabajo
             <ArrowRightIcon size={18} />
           </Link>
         </div>

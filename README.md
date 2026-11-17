@@ -1,15 +1,15 @@
 # Lozartico
 
-Sitio web de Lozartico Servicios Integrales, S.L.U.: construcción, reforma y mantenimiento, alicatados, pintura, impermeabilización de terrazas y fachadas, fontanería, electricidad, climatización y césped artificial en Valencia y Gran Canaria.
+Sitio web de Lozartico Servicios Integrales, S.L.U.: construcción, reformas y mantenimiento en Valencia y Gran Canaria, incluido césped artificial.
 
-Web estática, responsive y accesible, sin formularios y con contacto directo por WhatsApp, teléfono y email.
+La web se organiza en cuatro servicios: construcción y reformas, instalaciones, impermeabilización y mantenimiento. La empresa ejecuta los trabajos; no redacta proyectos de arquitectura ni asume la dirección facultativa.
 
 - Repositorio: [BakastaNub/Lozartico](https://github.com/BakastaNub/Lozartico)
 - Crédito de diseño y desarrollo: [Wilsolution](https://wilsolution.com)
 - Stack: Next.js 15, React 19, TypeScript, CSS propio y exportación estática
 - Diseño: navy, dorado y crema
-- Rutas: portada, 9 landings de servicio, aviso legal y privacidad
-- Cobertura: mapas de Valencia y Gran Canaria
+- Rutas: portada, 4 servicios, aviso legal y privacidad
+- Cobertura: Valencia y Gran Canaria, con mapas de ambas zonas
 
 ## Requisitos
 
@@ -54,14 +54,23 @@ Después vuelve a ejecutar `npm run build`.
 ```text
 app/                 Páginas, layout, SEO, sitemap, robots y estilos globales
 components/          Secciones y componentes reutilizables
-content/             Servicios, proyectos, reseñas, FAQs y datos de empresa
+content/             Servicios, trabajos, reseñas y datos de empresa
 lib/                 Utilidades de contacto, SEO y datos estructurados
 public/              Imágenes optimizadas, iconos y redirecciones legacy
-scripts/             Generación reproducible de imágenes y Open Graph
+scripts/             Generación reproducible de imágenes e iconos
 legacy/              Fuentes originales de fotos, logo e icono
 ```
 
 La web se genera como sitio estático en `out/`. Ese directorio es el que debe publicarse en GitHub Pages o en cualquier hosting estático.
+
+## Servicios
+
+- `/construccion-reformas`: obra nueva, reformas integrales, baños, cocinas, alicatados, pintura, suelos y césped artificial.
+- `/instalaciones`: fontanería, electricidad y climatización.
+- `/impermeabilizacion`: terrazas, cubiertas, tejados y fachadas.
+- `/mantenimiento`: comunidades, fincas, bajantes y zonas comunes.
+
+Las antiguas URLs de Valencia/Gran Canaria redirigen a estas páginas.
 
 ## Datos de empresa
 
@@ -85,7 +94,7 @@ El icono original está en `legacy/brand/lozartico.ico`. De ahí se generan el f
 - Configurar `NEXT_PUBLIC_SITE_URL` con el dominio definitivo.
 - Revisar la documentación legal antes de publicarla.
 - Revisar los datos de contacto si cambian.
-- Revisar las reseñas y los textos de proyecto con el titular del negocio.
+- Revisar las reseñas y los textos de los trabajos con el titular del negocio.
 - Añadir las fotos de conductos de climatización cuando estén disponibles.
-- Revisar la cobertura y los mapas de Valencia y Gran Canaria.
+- Revisar los mapas de Valencia y Gran Canaria.
 - Actualizar el workflow de GitHub Pages si se publica desde `out/`.

@@ -94,7 +94,7 @@ export function ProjectsGallery({ projects }: ProjectsGalleryProps) {
                 setActive(index);
               }}
             >
-              <span className="sr-only">Ampliar proyecto: </span>
+              <span className="sr-only">Ampliar trabajo: </span>
               <span className="project-card__media">
                 <Image
                   className="project-card__image"
@@ -126,7 +126,7 @@ export function ProjectsGallery({ projects }: ProjectsGalleryProps) {
           className="lightbox"
           role="dialog"
           aria-modal="true"
-          aria-label={`Proyecto: ${activeProject.title}`}
+          aria-label={`Trabajo: ${activeProject.title}`}
           onMouseDown={(event) => {
             if (event.target === event.currentTarget) {
               close();
@@ -169,7 +169,7 @@ export function ProjectsGallery({ projects }: ProjectsGalleryProps) {
                 <button
                   type="button"
                   onClick={() => move(-1)}
-                  aria-label="Proyecto anterior"
+                  aria-label="Trabajo anterior"
                 >
                   <ChevronLeftIcon size={20} />
                 </button>
@@ -179,7 +179,7 @@ export function ProjectsGallery({ projects }: ProjectsGalleryProps) {
                 <button
                   type="button"
                   onClick={() => move(1)}
-                  aria-label="Proyecto siguiente"
+                  aria-label="Trabajo siguiente"
                 >
                   <ChevronRightIcon size={20} />
                 </button>

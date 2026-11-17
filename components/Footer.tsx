@@ -7,32 +7,16 @@ import { MapPinIcon, PhoneIcon } from "./Icons";
 import { SocialLinks } from "./SocialLinks";
 
 const serviceLinks = [
-  { label: "Reformas en Valencia", href: "/reformas-valencia" },
-  { label: "Reformas en Gran Canaria", href: "/reformas-gran-canaria" },
-  { label: "Fontanería", href: "/fontaneria" },
-  { label: "Electricidad", href: "/electricidad" },
-  {
-    label: "Impermeabilización de terrazas y fachadas",
-    href: "/impermeabilizacion-terrazas",
-  },
-  { label: "Césped artificial", href: "/cesped-artificial" },
-  { label: "Administración de fincas", href: "/administracion-fincas" },
-  {
-    label: "Aire acondicionado en Valencia",
-    href: "/aire-acondicionado-valencia",
-  },
-  {
-    label: "Aire acondicionado en Gran Canaria",
-    href: "/aire-acondicionado-gran-canaria",
-  },
+  { label: "Construcción y reformas", href: "/construccion-reformas" },
+  { label: "Instalaciones", href: "/instalaciones" },
+  { label: "Impermeabilización", href: "/impermeabilizacion" },
+  { label: "Mantenimiento", href: "/mantenimiento" },
 ];
 
 const companyLinks = [
   { label: "Empresa", href: "/#empresa" },
-  { label: "Acreditaciones", href: "/#acreditaciones" },
-  { label: "Proyectos", href: "/#proyectos" },
+  { label: "Trabajos", href: "/#trabajos" },
   { label: "Opiniones", href: "/#opiniones" },
-  { label: "Preguntas frecuentes", href: "/#preguntas" },
   { label: "Contacto", href: "/#contacto" },
 ];
 
@@ -53,9 +37,9 @@ export function Footer() {
             />
           </Link>
           <p className="footer__description">
-            Construcción, reforma y mantenimiento en Valencia y Gran Canaria.
-            Alicatados, pintura, impermeabilización, fontanería, electricidad,
-            climatización y césped artificial.
+            Construcción, reformas y mantenimiento en Valencia y Gran Canaria.
+            Obra nueva, reformas, instalaciones, impermeabilización y
+            mantenimiento.
           </p>
           <SocialLinks className="footer__social" />
         </div>
@@ -136,7 +120,7 @@ export function Footer() {
             href="https://wilsolution.com"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Wilsolution, diseño y desarrollo web"
+            aria-label="Made by Wilsolution, diseño y desarrollo web"
           >
             <span>Made by</span>
             <Image

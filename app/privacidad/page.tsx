@@ -35,7 +35,7 @@ export default function PrivacidadPage() {
         <li>Datos de identificación y contacto, como nombre, teléfono o email.</li>
         <li>La zona en la que se encuentra el servicio solicitado.</li>
         <li>
-          La información que nos facilites sobre el espacio, el proyecto o la
+          La información que nos facilites sobre el espacio, el trabajo o la
           necesidad que quieres resolver.
         </li>
       </ul>

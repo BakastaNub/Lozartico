@@ -29,10 +29,10 @@ export function ContactSection({ service }: ContactSectionProps) {
             eyebrow="Contacto"
             title={
               service
-                ? "Hablemos de tu proyecto"
+                ? "Hablemos de tu trabajo"
                 : "Cuéntanos tu reforma o instalación"
             }
-            text="Escríbenos por WhatsApp o email con la zona y los detalles del proyecto. Te respondemos con los siguientes pasos, sin compromiso."
+            text="Escríbenos por WhatsApp o email con la zona y los detalles del trabajo. Te respondemos con los siguientes pasos, sin compromiso."
           />
 
           <ul className="contact__details">
