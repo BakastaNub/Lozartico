@@ -119,7 +119,7 @@ export function ContactSection({ service }: ContactSectionProps) {
             </span>
             <span className="contact-card__body">
               <span className="contact-card__label">Dónde estamos</span>
-              <strong>Valencia y Gran Canaria</strong>
+              <strong>Valencia · Gran Canaria</strong>
               <span className="contact-card__text">
                 Consulta la ubicación y las opiniones en Google Maps.
               </span>

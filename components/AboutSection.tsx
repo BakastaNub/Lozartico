@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 
 import { siteConfig } from "@/content/site";
@@ -22,15 +22,15 @@ export function AboutSection() {
           <div className="about__media-secondary">
             <Image
               src="/images/sede-lozartico.webp"
-              alt="Sede de Lozartico en Vecindario, Gran Canaria"
+              alt="Oficina de Lozartico"
               width={1080}
               height={807}
               sizes="(max-width: 900px) 45vw, 22vw"
             />
           </div>
           <div className="about__badge">
-            <strong>Desde 2024</strong>
-            <span>Construcción, reforma e instalaciones</span>
+            <strong>Equipo +15 años</strong>
+            <span>de experiencia en construcción y reforma</span>
           </div>
         </div>
 
@@ -38,7 +38,7 @@ export function AboutSection() {
           <SectionHeading
             eyebrow="Empresa"
             title="Un equipo que coordina la obra de principio a fin"
-            text="Lozartico Servicios Integrales, S.L.U. trabaja en construcción, reformas e instalaciones para particulares, comunidades, empresas y licitaciones públicas."
+            text="            Lozartico Servicios Integrales, S.L.U. trabaja en construcción, reformas e instalaciones para particulares, comunidades, empresas y licitaciones públicas, con servicio en Valencia y Gran Canaria y cobertura en L'Horta Nord y Sud."
           />
 
           <p>
@@ -50,26 +50,20 @@ export function AboutSection() {
 
           <dl className="about__facts">
             <div>
-              <dt>Razón social</dt>
+              <dt>Titular</dt>
               <dd>{siteConfig.legalName}</dd>
             </div>
             <div>
-              <dt>NIF</dt>
-              <dd>{siteConfig.nif}</dd>
+              <dt>Zona de servicio</dt>
+              <dd>{siteConfig.zones.join(" · ")}</dd>
             </div>
             <div>
-              <dt>Sede social</dt>
-              <dd>
-                {siteConfig.address.street} · {siteConfig.address.postalCode}{" "}
-                {siteConfig.address.locality} ({siteConfig.address.municipality})
-              </dd>
+              <dt>Experiencia</dt>
+              <dd>{siteConfig.experience}</dd>
             </div>
             <div>
-              <dt>Delegación</dt>
-              <dd>
-                {siteConfig.delegation.street} · {siteConfig.delegation.postalCode}{" "}
-                {siteConfig.delegation.locality}
-              </dd>
+              <dt>Licitaciones</dt>
+              <dd>Ayuntamientos y Ministerio de Defensa</dd>
             </div>
           </dl>
 

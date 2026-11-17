@@ -1,10 +1,4 @@
-import { siteConfig } from "@/content/site";
-import {
-  ArrowUpRightIcon,
-  CheckIcon,
-  FileCheckIcon,
-  ShieldIcon,
-} from "./Icons";
+import { CheckIcon, FileCheckIcon, ShieldIcon } from "./Icons";
 import { SectionHeading } from "./SectionHeading";
 
 const credentials = [
@@ -30,8 +24,8 @@ const credentials = [
   },
   {
     icon: CheckIcon,
-    title: "Situación tributaria en Canarias",
-    text: "Documentación tributaria al corriente para operar en las islas.",
+    title: "Situación tributaria",
+    text: "Documentación tributaria al corriente para desarrollar los trabajos.",
   },
 ];
 
@@ -57,15 +51,6 @@ export function CredentialsSection() {
               las obras, cumplir la normativa aplicable y mejorar de forma
               continua.
             </p>
-            <a
-              className="btn btn--primary credential-iso__cta"
-              href={siteConfig.iso.manual}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Descargar manual del SGA
-              <ArrowUpRightIcon size={18} />
-            </a>
           </article>
 
           <div className="credential-list" data-reveal>

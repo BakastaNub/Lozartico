@@ -5,9 +5,9 @@ export type FAQ = {
 
 export const homeFaqs: FAQ[] = [
   {
-    question: "¿Hacéis reformas integrales en Valencia y Gran Canaria?",
+    question: "¿Hacéis reformas integrales en Valencia y L'Horta?",
     answer:
-      "Sí. Trabajamos reformas integrales de viviendas, locales y comunidades en Valencia y Gran Canaria, coordinando albañilería, alicatados, pintura, fontanería, electricidad e impermeabilización.",
+      "Sí. Trabajamos reformas integrales de viviendas, locales y comunidades en Valencia, L'Horta Nord y L'Horta Sud, coordinando albañilería, alicatados, pintura, fontanería, electricidad e impermeabilización.",
   },
   {
     question: "¿Qué incluye una reforma de baño?",
@@ -20,9 +20,9 @@ export const homeFaqs: FAQ[] = [
       "Sí. Revisamos el origen de las filtraciones y aplicamos soluciones de impermeabilización para terrazas, cubiertas, tejados y fachadas, con acabados adaptados a cada superficie.",
   },
   {
-    question: "¿Trabajáis con administradores de fincas y empresas?",
+    question: "¿Trabajáis con administradores de fincas y comunidades?",
     answer:
-      "Sí. Atendemos comunidades, bajantes, zonas comunes y reformas para empresas privadas, además de trabajos para particulares.",
+      "Sí. Atendemos comunidades, bajantes, zonas comunes y reformas para administradores de fincas, además de trabajos para particulares y empresas.",
   },
   {
     question: "¿Tenéis experiencia en licitaciones públicas?",
@@ -33,6 +33,11 @@ export const homeFaqs: FAQ[] = [
     question: "¿Instaláis aire acondicionado split y conductos?",
     answer:
       "Sí. Instalamos equipos split y sistemas por conductos para viviendas, oficinas y locales, y realizamos el mantenimiento posterior de los equipos.",
+  },
+  {
+    question: "¿Instaláis césped artificial?",
+    answer:
+      "Sí. Instalamos césped artificial en terrazas, patios, jardines y zonas comunes, preparando la base y cuidando uniones y remates.",
   },
   {
     question: "¿Cómo pido presupuesto?",

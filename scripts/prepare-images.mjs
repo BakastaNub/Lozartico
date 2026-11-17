@@ -5,6 +5,7 @@ import sharp from "sharp";
 const root = process.cwd();
 const sourceDir = path.join(root, "legacy", "images");
 const newSourceDir = path.join(root, "legacy", "source-images");
+const brandDir = path.join(root, "legacy", "brand");
 const outputDir = path.join(root, "public", "images");
 
 const images = [
@@ -14,6 +15,13 @@ const images = [
   { source: path.join(sourceDir, "patio_reformado_espana_lozartico.jpg"), output: "proyecto-patio.webp" },
   { source: path.join(newSourceDir, "bano-1.jpeg"), output: "reforma-bano-1.webp" },
   { source: path.join(newSourceDir, "bano-2.jpeg"), output: "reforma-bano-2.webp" },
+  { source: path.join(newSourceDir, "presentacion.jpeg"), output: "presentacion.webp", quality: 80 },
+  { source: path.join(newSourceDir, "cesped-1.jpeg"), output: "cesped-artificial-1.webp", quality: 80 },
+  { source: path.join(newSourceDir, "cesped-2.jpeg"), output: "cesped-artificial-2.webp", quality: 80 },
+  { source: path.join(newSourceDir, "cesped-3.jpeg"), output: "cesped-artificial-3.webp", quality: 80 },
+  { source: path.join(newSourceDir, "finca-escalera.jpeg"), output: "finca-escalera.webp", quality: 80 },
+  { source: path.join(newSourceDir, "suelo-1.jpeg"), output: "instalacion-suelo-1.webp", quality: 80 },
+  { source: path.join(newSourceDir, "suelo-2.jpeg"), output: "instalacion-suelo-2.webp", quality: 80 },
   { source: path.join(newSourceDir, "construccion.jpeg"), output: "construccion.webp", width: 900, quality: 78 },
   { source: path.join(newSourceDir, "equipo.jpeg"), output: "equipo-lozartico.webp" },
   { source: path.join(newSourceDir, "sede.jpeg"), output: "sede-lozartico.webp" },
@@ -21,6 +29,13 @@ const images = [
 ];
 
 await mkdir(outputDir, { recursive: true });
+
+await sharp(path.join(brandDir, "lozartico-sl-source.svg"))
+  .extract({ left: 60, top: 297, width: 1493, height: 408 })
+  .resize({ width: 800 })
+  .webp({ quality: 90, effort: 6 })
+  .toFile(path.join(outputDir, "logo-lozartico.webp"));
+console.log("created logo-lozartico.webp");
 
 for (const { source, output, width = 1080, quality = 82 } of images) {
   await sharp(source)
@@ -31,9 +46,7 @@ for (const { source, output, width = 1080, quality = 82 } of images) {
   console.log(`created ${output}`);
 }
 
-const logo = await readFile(
-  path.join(outputDir, "logo-lozartico-footer.webp"),
-);
+const logo = await readFile(path.join(outputDir, "logo-lozartico.webp"));
 const logoUri = `data:image/webp;base64,${logo.toString("base64")}`;
 const hero = await sharp(path.join(newSourceDir, "construccion.jpeg"))
   .rotate()
@@ -65,7 +78,7 @@ const overlay = `
     <tspan x="80" dy="60">reformas e</tspan>
     <tspan x="80" dy="60">impermeabilización</tspan>
   </text>
-  <text x="80" y="496" fill="#F2D21A" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Valencia · Gran Canaria</text>
+  <text x="80" y="496" fill="#F2D21A" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Valencia · L'Horta Nord y Sud</text>
   <text x="80" y="548" fill="#A9BFD9" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500">Lozartico SL · Presupuesto rápido por WhatsApp</text>
 </svg>`;
 

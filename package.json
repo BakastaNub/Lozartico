@@ -8,6 +8,7 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "images": "node scripts/prepare-images.mjs",
+    "icons": "node scripts/prepare-icons.mjs",
     "preview": "npx --yes serve out"
   },
   "dependencies": {

@@ -18,8 +18,7 @@ export default function PrivacidadPage() {
       <h2>1. Responsable del tratamiento</h2>
       <p>
         El responsable del tratamiento de los datos personales es{" "}
-        <strong>{siteConfig.legalName}</strong>, con NIF{" "}
-        <strong>{siteConfig.nif}</strong> y domicilio social en{" "}
+        <strong>{siteConfig.legalName}</strong>, con domicilio social en{" "}
         {siteConfig.address.street}, {siteConfig.address.postalCode}{" "}
         {siteConfig.address.locality} ({siteConfig.address.municipality}),
         {siteConfig.address.region}, España. Puedes contactar en{" "}
@@ -85,6 +84,11 @@ export default function PrivacidadPage() {
         garantías adecuadas. Algunos proveedores pueden implicar transferencias
         internacionales de datos amparadas por los mecanismos previstos en la
         normativa de protección de datos.
+      </p>
+      <p>
+        Los mapas de cobertura se muestran mediante OpenStreetMap. Al cargarse,
+        el navegador solicita los mosaicos del mapa a los servidores de ese
+        servicio.
       </p>
 
       <h2>7. Tus derechos</h2>

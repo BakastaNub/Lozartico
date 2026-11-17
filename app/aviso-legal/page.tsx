@@ -18,8 +18,8 @@ export default function AvisoLegalPage() {
       <h2>1. Titular del sitio</h2>
       <p>
         Este sitio web pertenece a <strong>{siteConfig.legalName}</strong>, con
-        NIF <strong>{siteConfig.nif}</strong> y domicilio social en{" "}
-        {siteConfig.address.street}, {siteConfig.address.postalCode}{" "}
+        domicilio social en {siteConfig.address.street},{" "}
+        {siteConfig.address.postalCode}{" "}
         {siteConfig.address.locality} ({siteConfig.address.municipality}),
         {siteConfig.address.region}, España.
       </p>

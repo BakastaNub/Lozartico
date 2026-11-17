@@ -1,29 +1,32 @@
 # Plan de rediseño · Lozartico
 
-**Estado:** implementado el 16/11/2026
+**Estado:** implementado el 17/11/2026
 **Repositorio:** https://github.com/BakastaNub/Lozartico
 **Rama de trabajo:** `redesign`
 
 ## Objetivo
 
-Reposicionar la web de Lozartico para que la construcción y las reformas sean el servicio principal, manteniendo la climatización como servicio secundario. La web debe transmitir confianza a particulares, administradores de fincas, empresas y licitaciones públicas.
+Reposicionar la web de Lozartico alrededor de la construcción, la reforma y el mantenimiento, con la climatización como servicio complementario. La empresa trabaja en Valencia y Gran Canaria, con cobertura en L'Horta Nord y Sud.
 
 ## Decisiones aplicadas
 
-- La portada, el hero, los metadatos y el orden de servicios priorizan reformas y construcción.
-- La climatización sigue presente, pero después de reformas, fontanería y electricidad.
-- Se mantiene el contacto directo por WhatsApp, teléfono y email, sin formularios.
-- La empresa se presenta como Lozartico Servicios Integrales, S.L.U.
-- Se elimina la referencia a “+3 años” y se usa “Desde 2024”.
+- El encabezado principal es “Construcción, reforma y mantenimiento”.
+- Las zonas principales son Valencia y Gran Canaria; en Valencia se cubre también L'Horta Nord y Sud.
+- Se mantiene el servicio de Gran Canaria y sus landings.
+- La portada muestra dos mapas de cobertura: Valencia (con L'Horta Nord y Sud) y Gran Canaria.
+- La experiencia se presenta como “Equipo de más de 15 años de experiencia”.
+- Se retiró el CIF/NIF de la web.
+- Se retiró el enlace al PDF del manual ISO 14001.
+- El logo se muestra con su fondo azul, el texto original, esquinas redondeadas y más margen interior.
+- El icono de la web se genera con fondo azul y texto blanco.
 - El teléfono principal sigue siendo el 634 33 25 65.
-- El icono de la web se genera a partir de `legacy/brand/lozartico.ico`.
-- Las imágenes nuevas se optimizan a WebP y se colocan en hero, proyectos, galerías y secciones de empresa.
+- Se mantiene el contacto directo por WhatsApp, teléfono y email, sin formularios.
 
 ## Servicios
 
 1. Reformas y construcción
    - Reformas integrales.
-   - Alicatados y pintura.
+   - Alicatados, pintura y suelos.
    - Impermeabilización de terrazas y fachadas.
 2. Fontanería
    - Baños y cocinas.
@@ -35,40 +38,38 @@ Reposicionar la web de Lozartico para que la construcción y las reformas sean e
    - Split.
    - Conductos.
    - Mantenimiento.
+5. Césped artificial
+   - Terrazas, patios y jardines.
+   - Preparación de base y remates.
+6. Administración de fincas
+   - Comunidades y administradores.
+   - Bajantes y zonas comunes.
+   - Reformas y mantenimiento.
 
-Se añadieron las landings `/fontaneria` y `/electricidad`. La landing de impermeabilización se amplió a terrazas, tejados y fachadas.
+Landings disponibles: Valencia, Gran Canaria, impermeabilización, fontanería, electricidad, climatización, césped artificial y administración de fincas.
 
 ## Imágenes
 
-- `construccion.webp`: hero principal y landing de reformas.
-- `reforma-bano-1.webp`: proyecto de baño y landing de reformas.
-- `reforma-bano-2.webp`: galería de reformas y fontanería.
-- `impermeabilizacion-tejado.webp`: impermeabilización y proyecto de tejado.
-- `equipo-lozartico.webp`: sección de empresa.
-- `sede-lozartico.webp`: sección de empresa.
-- Las imágenes antiguas se conservan como recursos secundarios.
+- `presentacion.webp`: hero principal.
+- `reforma-bano-1.webp` y `reforma-bano-2.webp`: reformas de baño.
+- `impermeabilizacion-tejado.webp`: impermeabilización.
+- `cesped-artificial-1/2/3.webp`: servicio y galería de césped artificial.
+- `finca-escalera.webp`: administración de fincas.
+- `instalacion-suelo-1/2.webp`: galería de reformas.
+- `equipo-lozartico.webp` y `sede-lozartico.webp`: sección de empresa.
+- Los proyectos y fotos se distribuyen entre Valencia y Gran Canaria.
 
 ## Nuevas secciones
 
-- Empresa: equipo, sede, datos legales y registro.
+- Empresa: equipo, experiencia y zona de servicio.
 - Clientes: administradores de fincas, empresas privadas y licitaciones públicas.
-- Acreditaciones y coberturas: ISO 14001:2015, registro de empresas licitadoras, responsabilidad civil MAPFRE, servicio de prevención ajeno, ROLECE y situación tributaria en Canarias.
-- PDF del Sistema de Gestión Ambiental disponible en `public/docs/`.
+- Acreditaciones y coberturas: ISO 14001:2015, registro de empresas licitadoras, responsabilidad civil MAPFRE, servicio de prevención ajeno, ROLECE y situación tributaria.
+- Cobertura: dos mapas geográficos con las zonas de Valencia (y L'Horta) y Gran Canaria.
 
-## Datos legales incorporados
+## Pendiente
 
-- Razón social: Lozartico Servicios Integrales, S.L.U.
-- NIF: B19391390
-- Sede social: C/ Maldonado, 18 · 35110 Vecindario (Santa Lucía de Tirajana), Las Palmas
-- Delegación: C/ Emilia Pardo Bazán, 13 · 46018 Valencia
-- Registro Mercantil: Las Palmas, hoja GC-63367
-- Fecha de constitución: 02/09/2024
-
-## Pendiente antes de publicar
-
+- Añadir fotos de conductos de climatización cuando el cliente las envíe.
 - Configurar el dominio definitivo en `NEXT_PUBLIC_SITE_URL`.
-- Revisar el PDF y las páginas legales antes de publicarlas.
-- Añadir el certificado ISO 14001 emitido si se quiere mostrar además del manual.
-- Revisar las reseñas y los textos de proyecto con el cliente.
-- Añadir el certificado ISO 14001 emitido si se quiere mostrar además del manual del SGA.
+- Revisar las reseñas y los textos legales con el cliente.
+- Revisar los mapas y la cobertura antes de publicar.
 - Actualizar el workflow de GitHub Pages para publicar `out/`.

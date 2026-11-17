@@ -7,9 +7,11 @@ import {
   ArrowRightIcon,
   ArrowUpRightIcon,
   BoltIcon,
+  BuildingIcon,
   CheckIcon,
   DropletIcon,
   HomeIcon,
+  LeafIcon,
   SnowflakeIcon,
   WhatsAppIcon,
   WrenchIcon,
@@ -22,6 +24,8 @@ const serviceIcons = {
   terrace: DropletIcon,
   wrench: WrenchIcon,
   bolt: BoltIcon,
+  leaf: LeafIcon,
+  building: BuildingIcon,
 };
 
 export function ServicesSection() {

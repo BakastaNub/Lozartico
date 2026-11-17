@@ -194,6 +194,15 @@ export function TikTokIcon(props: IconProps) {
   );
 }
 
+export function LeafIcon(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M11 20A7 7 0 0 1 4 13c0-5 4-9 9-9h7v7a7 7 0 0 1-7 7h-2Z" />
+      <path d="M4 21c2-6 6-10 12-12" />
+    </svg>
+  );
+}
+
 export function BoltIcon(props: IconProps) {
   return (
     <svg {...base(props)}>

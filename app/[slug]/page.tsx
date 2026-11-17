@@ -151,7 +151,9 @@ export default async function ServicePage({ params }: ServicePageProps) {
               >
                 <span>
                   <MapPinIcon size={16} />
-                  Valencia y Gran Canaria
+                  {service.slug.endsWith("gran-canaria")
+                    ? "Gran Canaria"
+                    : "Valencia"}
                 </span>
                 <span>
                   <CheckIcon size={16} />

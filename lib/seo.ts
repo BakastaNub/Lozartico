@@ -37,7 +37,7 @@ export function ogImages() {
       url,
       width: 1200,
       height: 630,
-      alt: "Lozartico · Reformas y construcción en Valencia y Gran Canaria",
+      alt: "Lozartico · Construcción, reforma y mantenimiento en Valencia y Gran Canaria",
     },
   ];
 }

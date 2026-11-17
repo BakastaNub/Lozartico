@@ -26,8 +26,8 @@ export function TrustStrip() {
             <CheckIcon size={22} />
           </span>
           <span>
-            <strong>Desde 2024</strong>
-            <span>Construcción y reformas</span>
+            <strong>Equipo +15 años</strong>
+            <span>de experiencia en obra</span>
           </span>
         </div>
 
@@ -37,7 +37,7 @@ export function TrustStrip() {
           </span>
           <span>
             <strong>Valencia y Gran Canaria</strong>
-            <span>Dos zonas de servicio</span>
+            <span>Cobertura en L&apos;Horta</span>
           </span>
         </div>
 

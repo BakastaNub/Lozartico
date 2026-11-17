@@ -27,11 +27,11 @@ export const metadata: Metadata = {
   ...(siteConfig.url ? { metadataBase: new URL(siteConfig.url) } : {}),
   title: {
     default:
-      "Lozartico | Reformas y construcción en Valencia y Gran Canaria",
+      "Lozartico | Construcción, reforma y mantenimiento en Valencia y Gran Canaria",
     template: "%s | Lozartico",
   },
   description:
-    "Reformas integrales, alicatados, pintura, impermeabilización, fontanería, electricidad y climatización en Valencia y Gran Canaria. Presupuesto directo por WhatsApp.",
+    "Construcción, reforma y mantenimiento en Valencia y Gran Canaria, con cobertura en L'Horta Nord y Sud. Alicatados, pintura, impermeabilización, fontanería, electricidad, climatización y césped artificial.",
   applicationName: siteConfig.shortName,
   authors: [{ name: siteConfig.legalName }],
   creator: siteConfig.legalName,
@@ -41,12 +41,13 @@ export const metadata: Metadata = {
     "reformas Valencia",
     "reformas Gran Canaria",
     "construcción Valencia",
-    "construcción Gran Canaria",
+    "mantenimiento Valencia",
     "impermeabilización de terrazas y fachadas",
     "fontanería Valencia",
     "electricidad Valencia",
+    "césped artificial Valencia",
+    "administración de fincas Valencia",
     "aire acondicionado Valencia",
-    "aire acondicionado Las Palmas",
     "Lozartico",
   ],
   icons: {
@@ -71,16 +72,18 @@ export const metadata: Metadata = {
     locale: "es_ES",
     siteName: siteConfig.shortName,
     ...(siteConfig.url ? { url: "/" } : {}),
-    title: "Lozartico | Reformas y construcción en Valencia y Gran Canaria",
+    title:
+      "Lozartico | Construcción, reforma y mantenimiento en Valencia y Gran Canaria",
     description:
-      "Reformas, construcción, impermeabilización, fontanería, electricidad y climatización en Valencia y Gran Canaria. Trato directo y presupuesto por WhatsApp.",
+      "Construcción, reforma y mantenimiento en Valencia y Gran Canaria. Alicatados, pintura, impermeabilización, fontanería, electricidad y climatización.",
     images: ogImages(),
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lozartico | Reformas y construcción en Valencia y Gran Canaria",
+    title:
+      "Lozartico | Construcción, reforma y mantenimiento en Valencia y Gran Canaria",
     description:
-      "Reformas, construcción, fontanería, electricidad, impermeabilización y climatización en Valencia y Gran Canaria. Presupuesto directo por WhatsApp.",
+      "Construcción, reforma y mantenimiento en Valencia y Gran Canaria. Presupuesto directo por WhatsApp.",
     images: ogImages()?.map((image) => image.url),
   },
 };

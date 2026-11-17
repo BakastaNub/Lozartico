@@ -21,14 +21,12 @@ export function localBusinessSchema() {
     name: siteConfig.name,
     legalName: siteConfig.legalName,
     alternateName: siteConfig.shortName,
-    taxID: siteConfig.nif,
-    foundingDate: siteConfig.foundingDate,
     description: siteConfig.description,
     url,
     telephone: siteConfig.phone,
     email: siteConfig.email,
     image: absoluteUrl("/images/og-cover.jpg"),
-    logo: absoluteUrl("/images/logo-lozartico-nav.webp"),
+    logo: absoluteUrl("/images/logo-lozartico.webp"),
     priceRange: "$$",
     knowsAbout: [
       "Reformas integrales",
@@ -39,6 +37,9 @@ export function localBusinessSchema() {
       "Fontanería",
       "Electricidad",
       "Climatización",
+      "Césped artificial",
+      "Administración de fincas",
+      "Mantenimiento",
     ],
     hasCredential: [
       {
@@ -62,7 +63,8 @@ export function localBusinessSchema() {
     },
     areaServed: [
       { "@type": "City", name: "Valencia" },
-      { "@type": "City", name: "Las Palmas de Gran Canaria" },
+      { "@type": "AdministrativeArea", name: "L'Horta Nord" },
+      { "@type": "AdministrativeArea", name: "L'Horta Sud" },
       { "@type": "AdministrativeArea", name: "Gran Canaria" },
     ],
     openingHoursSpecification: [
@@ -129,7 +131,8 @@ export function serviceSchema(service: Service) {
     },
     areaServed: [
       { "@type": "City", name: "Valencia" },
-      { "@type": "City", name: "Las Palmas de Gran Canaria" },
+      { "@type": "AdministrativeArea", name: "L'Horta Nord" },
+      { "@type": "AdministrativeArea", name: "L'Horta Sud" },
       { "@type": "AdministrativeArea", name: "Gran Canaria" },
     ],
   };

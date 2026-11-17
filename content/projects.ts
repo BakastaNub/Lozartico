@@ -32,7 +32,7 @@ export const projects: Project[] = [
     slug: "armario-empotrado",
     title: "Armario empotrado a medida",
     category: "Reforma de habitación",
-    location: "Islas Canarias",
+    location: "Gran Canaria",
     description:
       "Diseño y montaje de armario empotrado con puertas de espejo, distribución interior personalizada y renovación de paredes y suelo.",
     image: {
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     slug: "habitacion-azul-blanco",
     title: "Habitación azul y blanco",
     category: "Diseño de interiores",
-    location: "Islas Canarias",
+    location: "Gran Canaria",
     description:
       "Reforma completa de dormitorio con nueva distribución, pintura de alta calidad, iluminación LED y mobiliario integrado.",
     image: {
@@ -82,6 +82,34 @@ export const projects: Project[] = [
       alt: "Trabajo de impermeabilización de tejado realizado por Lozartico",
       width: 900,
       height: 1200,
+    },
+  },
+  {
+    slug: "cesped-artificial",
+    title: "Instalación de césped artificial",
+    category: "Exteriores",
+    location: "Valencia",
+    description:
+      "Instalación de césped artificial en una zona exterior, con preparación de la base y remates cuidados.",
+    image: {
+      src: "/images/cesped-artificial-2.webp",
+      alt: "Instalación de césped artificial realizada por Lozartico",
+      width: 1080,
+      height: 1440,
+    },
+  },
+  {
+    slug: "escalera-de-finca",
+    title: "Reforma de escalera de finca",
+    category: "Comunidades",
+    location: "Valencia",
+    description:
+      "Reforma y mejora de una escalera de finca, cuidando el acceso y los acabados de una zona común.",
+    image: {
+      src: "/images/finca-escalera.webp",
+      alt: "Reforma de escalera de finca realizada por Lozartico",
+      width: 1080,
+      height: 1920,
     },
   },
 ];

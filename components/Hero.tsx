@@ -13,11 +13,11 @@ export function Hero() {
         <div className="hero__content">
           <span className="hero__tag" data-reveal>
             <span className="hero__tag-dot" aria-hidden="true" />
-            Reformas · Construcción · Instalaciones
+            Valencia · Gran Canaria
           </span>
 
           <h1 data-reveal style={{ "--reveal-delay": "60ms" } as CSSProperties}>
-            Reformas y construcción en <em>Valencia y Gran Canaria</em>
+            Construcción, reforma y <em>mantenimiento</em>
           </h1>
 
           <p
@@ -25,9 +25,9 @@ export function Hero() {
             data-reveal
             style={{ "--reveal-delay": "120ms" } as CSSProperties}
           >
-            Reformas integrales, alicatados, pintura e impermeabilización de
-            terrazas y fachadas. También fontanería, electricidad y
-            climatización, con un solo equipo coordinando la obra.
+            Reformas integrales, alicatados, pintura, suelos e
+            impermeabilización. También fontanería, electricidad, climatización y
+            césped artificial, con un solo equipo coordinando la obra.
           </p>
 
           <div
@@ -64,12 +64,12 @@ export function Hero() {
             style={{ "--reveal-delay": "300ms" } as CSSProperties}
           >
             <div className="hero__stat">
-              <strong>Desde 2024</strong>
-              <span>empresa constituida</span>
+              <strong>+15 años</strong>
+              <span>de experiencia del equipo</span>
             </div>
             <div className="hero__stat">
               <strong>2 zonas</strong>
-              <span>Valencia y Canarias</span>
+              <span>Valencia y Gran Canaria</span>
             </div>
             <div className="hero__stat">
               <strong>Pública y privada</strong>
@@ -87,10 +87,10 @@ export function Hero() {
           <div className="hero__image-wrap">
             <Image
               className="hero__image"
-              src="/images/construccion.webp"
-              alt="Obra de construcción y reforma realizada por Lozartico"
-              width={900}
-              height={1200}
+              src="/images/presentacion.webp"
+              alt="Presentación de los trabajos de construcción y reforma de Lozartico"
+              width={1080}
+              height={1750}
               priority
               sizes="(max-width: 900px) 100vw, 46vw"
             />
@@ -98,7 +98,7 @@ export function Hero() {
               <MapPinIcon size={18} />
               <div>
                 <strong>Valencia</strong>
-                <span>y Las Palmas de Gran Canaria</span>
+                <span>Gran Canaria</span>
               </div>
             </div>
           </div>

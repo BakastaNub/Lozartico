@@ -88,10 +88,10 @@ export function Header() {
           >
             <Image
               className="nav__logo"
-              src="/images/logo-lozartico-nav.webp"
+              src="/images/logo-lozartico.webp"
               alt="Lozartico"
               width={800}
-              height={144}
+              height={219}
               priority
             />
           </Link>

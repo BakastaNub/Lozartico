@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 
 import { siteConfig } from "@/content/site";
@@ -15,7 +15,12 @@ const serviceLinks = [
     label: "Impermeabilización de terrazas y fachadas",
     href: "/impermeabilizacion-terrazas",
   },
-  { label: "Aire acondicionado en Valencia", href: "/aire-acondicionado-valencia" },
+  { label: "Césped artificial", href: "/cesped-artificial" },
+  { label: "Administración de fincas", href: "/administracion-fincas" },
+  {
+    label: "Aire acondicionado en Valencia",
+    href: "/aire-acondicionado-valencia",
+  },
   {
     label: "Aire acondicionado en Gran Canaria",
     href: "/aire-acondicionado-gran-canaria",
@@ -40,17 +45,18 @@ export function Footer() {
         <div className="footer__brand-col">
           <Link className="footer__brand" href="/" aria-label="Lozartico, ir al inicio">
             <Image
-              src="/images/logo-lozartico-footer.webp"
+              src="/images/logo-lozartico.webp"
               alt="Lozartico"
               width={800}
-              height={191}
+              height={219}
               className="footer__logo"
             />
           </Link>
           <p className="footer__description">
-            Construcción y reformas integrales en Valencia y Gran Canaria.
-            Alicatados, pintura, impermeabilización, fontanería, electricidad y
-            climatización con trato directo.
+            Construcción, reforma y mantenimiento en Valencia y Gran Canaria,
+            con cobertura en L&apos;Horta Nord y Sud. Alicatados, pintura,
+            impermeabilización, fontanería, electricidad, climatización y césped
+            artificial.
           </p>
           <SocialLinks className="footer__social" />
         </div>
@@ -114,7 +120,7 @@ export function Footer() {
                 rel="noopener noreferrer"
               >
                 <MapPinIcon size={16} />
-                {siteConfig.zones.join(" · ")}
+                Valencia · Gran Canaria
               </a>
             </li>
           </ul>
