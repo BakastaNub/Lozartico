@@ -63,8 +63,6 @@ export function localBusinessSchema() {
     },
     areaServed: [
       { "@type": "City", name: "Valencia" },
-      { "@type": "AdministrativeArea", name: "L'Horta Nord" },
-      { "@type": "AdministrativeArea", name: "L'Horta Sud" },
       { "@type": "AdministrativeArea", name: "Gran Canaria" },
     ],
     openingHoursSpecification: [
@@ -131,8 +129,6 @@ export function serviceSchema(service: Service) {
     },
     areaServed: [
       { "@type": "City", name: "Valencia" },
-      { "@type": "AdministrativeArea", name: "L'Horta Nord" },
-      { "@type": "AdministrativeArea", name: "L'Horta Sud" },
       { "@type": "AdministrativeArea", name: "Gran Canaria" },
     ],
   };

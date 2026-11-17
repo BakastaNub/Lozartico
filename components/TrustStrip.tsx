@@ -37,7 +37,7 @@ export function TrustStrip() {
           </span>
           <span>
             <strong>Valencia y Gran Canaria</strong>
-            <span>Cobertura en L&apos;Horta</span>
+            <span>Dos zonas de servicio</span>
           </span>
         </div>
 

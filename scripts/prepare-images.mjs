@@ -1,4 +1,4 @@
-import { mkdir, readFile } from "node:fs/promises";
+﻿import { mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 
@@ -78,7 +78,7 @@ const overlay = `
     <tspan x="80" dy="60">reformas e</tspan>
     <tspan x="80" dy="60">impermeabilización</tspan>
   </text>
-  <text x="80" y="496" fill="#F2D21A" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Valencia · L'Horta Nord y Sud</text>
+  <text x="80" y="496" fill="#F2D21A" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Valencia · Gran Canaria</text>
   <text x="80" y="548" fill="#A9BFD9" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500">Lozartico SL · Presupuesto rápido por WhatsApp</text>
 </svg>`;
 
@@ -93,3 +93,4 @@ await sharp({
   .toFile(path.join(outputDir, "og-cover.jpg"));
 
 console.log("created og-cover.jpg");
+

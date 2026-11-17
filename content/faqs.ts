@@ -5,9 +5,9 @@ export type FAQ = {
 
 export const homeFaqs: FAQ[] = [
   {
-    question: "¿Hacéis reformas integrales en Valencia y L'Horta?",
+    question: "¿Hacéis reformas integrales en Valencia?",
     answer:
-      "Sí. Trabajamos reformas integrales de viviendas, locales y comunidades en Valencia, L'Horta Nord y L'Horta Sud, coordinando albañilería, alicatados, pintura, fontanería, electricidad e impermeabilización.",
+      "Sí. Trabajamos reformas integrales de viviendas, locales y comunidades en Valencia, coordinando albañilería, alicatados, pintura, fontanería, electricidad e impermeabilización.",
   },
   {
     question: "¿Qué incluye una reforma de baño?",

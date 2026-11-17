@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     template: "%s | Lozartico",
   },
   description:
-    "Construcción, reforma y mantenimiento en Valencia y Gran Canaria, con cobertura en L'Horta Nord y Sud. Alicatados, pintura, impermeabilización, fontanería, electricidad, climatización y césped artificial.",
+    "Construcción, reforma y mantenimiento en Valencia y Gran Canaria. Alicatados, pintura, impermeabilización, fontanería, electricidad, climatización y césped artificial.",
   applicationName: siteConfig.shortName,
   authors: [{ name: siteConfig.legalName }],
   creator: siteConfig.legalName,

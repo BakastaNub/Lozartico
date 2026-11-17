@@ -38,7 +38,7 @@ export function AboutSection() {
           <SectionHeading
             eyebrow="Empresa"
             title="Un equipo que coordina la obra de principio a fin"
-            text="            Lozartico Servicios Integrales, S.L.U. trabaja en construcción, reformas e instalaciones para particulares, comunidades, empresas y licitaciones públicas, con servicio en Valencia y Gran Canaria y cobertura en L'Horta Nord y Sud."
+            text="            Lozartico Servicios Integrales, S.L.U. trabaja en construcción, reformas e instalaciones para particulares, comunidades, empresas y licitaciones públicas, con servicio en Valencia y Gran Canaria."
           />
 
           <p>

@@ -8,8 +8,8 @@ const coverage = [
   {
     index: "01",
     title: "Valencia",
-    subtitle: "Cobertura: L'Horta Nord y L'Horta Sud",
-    text: "Reformas, mantenimiento, fontanería, electricidad, climatización y césped artificial en Valencia y los municipios de L'Horta.",
+    subtitle: "Servicio en Valencia",
+    text: "Reformas, mantenimiento, fontanería, electricidad, climatización y césped artificial en Valencia.",
     map: "https://www.openstreetmap.org/export/embed.html?bbox=-0.78%2C39.20%2C-0.08%2C39.78&layer=mapnik&marker=39.4699%2C-0.3763",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Valencia",
     links: [
@@ -42,7 +42,7 @@ export function ZonesSection() {
         <SectionHeading
           eyebrow="Cobertura"
           title="Dos zonas de servicio"
-          text="Trabajamos en Valencia y Gran Canaria. En Valencia cubrimos también L'Horta Nord y Sud. Consulta el mapa de cada zona y escríbenos para confirmar la disponibilidad de tu proyecto."
+          text="Trabajamos en Valencia y Gran Canaria. Consulta el mapa de cada zona y escríbenos para confirmar la disponibilidad de tu proyecto."
         />
 
         <div className="coverage-grid">

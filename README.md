@@ -1,6 +1,6 @@
 # Lozartico
 
-Sitio web de Lozartico Servicios Integrales, S.L.U.: construcción, reforma y mantenimiento, alicatados, pintura, impermeabilización de terrazas y fachadas, fontanería, electricidad, climatización y césped artificial en Valencia y Gran Canaria, con cobertura en L'Horta Nord y Sud.
+Sitio web de Lozartico Servicios Integrales, S.L.U.: construcción, reforma y mantenimiento, alicatados, pintura, impermeabilización de terrazas y fachadas, fontanería, electricidad, climatización y césped artificial en Valencia y Gran Canaria.
 
 Web estática, responsive y accesible, sin formularios y con contacto directo por WhatsApp, teléfono y email.
 
@@ -8,7 +8,7 @@ Web estática, responsive y accesible, sin formularios y con contacto directo po
 - Stack: Next.js 15, React 19, TypeScript, CSS propio y exportación estática
 - Diseño: navy, dorado y crema
 - Rutas: portada, 9 landings de servicio, aviso legal y privacidad
-- Cobertura: mapas de Valencia (incluida L'Horta) y Gran Canaria
+- Cobertura: mapas de Valencia y Gran Canaria
 
 ## Requisitos
 
@@ -86,5 +86,5 @@ El icono original está en `legacy/brand/lozartico.ico`. De ahí se generan el f
 - Revisar los datos de contacto si cambian.
 - Revisar las reseñas y los textos de proyecto con el titular del negocio.
 - Añadir las fotos de conductos de climatización cuando estén disponibles.
-- Revisar la cobertura y los mapas de Valencia/L'Horta y Gran Canaria.
+- Revisar la cobertura y los mapas de Valencia y Gran Canaria.
 - Actualizar el workflow de GitHub Pages si se publica desde `out/`.

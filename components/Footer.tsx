@@ -53,10 +53,9 @@ export function Footer() {
             />
           </Link>
           <p className="footer__description">
-            Construcción, reforma y mantenimiento en Valencia y Gran Canaria,
-            con cobertura en L&apos;Horta Nord y Sud. Alicatados, pintura,
-            impermeabilización, fontanería, electricidad, climatización y césped
-            artificial.
+            Construcción, reforma y mantenimiento en Valencia y Gran Canaria.
+            Alicatados, pintura, impermeabilización, fontanería, electricidad,
+            climatización y césped artificial.
           </p>
           <SocialLinks className="footer__social" />
         </div>
