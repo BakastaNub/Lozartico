@@ -18,12 +18,12 @@ export const projects: Project[] = [
     slug: "bano-moderno-completo",
     title: "Baño moderno completo",
     category: "Reforma de baño",
-    location: "Valencia",
+    location: "Gran Canaria",
     description:
       "Reforma integral de baño con alicatado de gran formato, fontanería nueva, mampara de cristal y acabados de alta calidad.",
     image: {
       src: "/images/reforma-bano-1.webp",
-      alt: "Baño moderno reformado por Lozartico en Valencia",
+      alt: "Baño moderno reformado por Lozartico en Gran Canaria",
       width: 1080,
       height: 1920,
     },
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     slug: "habitacion-azul-blanco",
     title: "Habitación azul y blanco",
     category: "Diseño de interiores",
-    location: "Gran Canaria",
+    location: "Valencia",
     description:
       "Reforma completa de dormitorio con nueva distribución, pintura de alta calidad, iluminación LED y mobiliario integrado.",
     image: {

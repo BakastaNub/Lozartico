@@ -130,9 +130,26 @@ export function Footer() {
         <p>
           © {year} {siteConfig.legalName}. Todos los derechos reservados.
         </p>
-        <div className="footer__legal">
-          <Link href="/aviso-legal">Aviso legal</Link>
-          <Link href="/privacidad">Privacidad</Link>
+        <div className="footer__meta">
+          <a
+            className="footer__credit"
+            href="https://wilsolution.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Wilsolution, diseño y desarrollo web"
+          >
+            <span>Made by</span>
+            <Image
+              src="/images/wilsolution.svg"
+              alt="Wilsolution"
+              width={600}
+              height={380}
+            />
+          </a>
+          <div className="footer__legal">
+            <Link href="/aviso-legal">Aviso legal</Link>
+            <Link href="/privacidad">Privacidad</Link>
+          </div>
         </div>
       </div>
     </footer>

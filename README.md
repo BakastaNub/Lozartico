@@ -5,6 +5,7 @@ Sitio web de Lozartico Servicios Integrales, S.L.U.: construcción, reforma y ma
 Web estática, responsive y accesible, sin formularios y con contacto directo por WhatsApp, teléfono y email.
 
 - Repositorio: [BakastaNub/Lozartico](https://github.com/BakastaNub/Lozartico)
+- Crédito de diseño y desarrollo: [Wilsolution](https://wilsolution.com)
 - Stack: Next.js 15, React 19, TypeScript, CSS propio y exportación estática
 - Diseño: navy, dorado y crema
 - Rutas: portada, 9 landings de servicio, aviso legal y privacidad

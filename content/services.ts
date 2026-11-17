@@ -309,7 +309,11 @@ export const services: Service[] = [
       "Reformas integrales en Valencia | Baños, cocinas y suelos | Lozartico",
     metaDescription:
       "Reformas integrales en Valencia. Baños, cocinas, alicatados, pintura, suelos, fontanería, electricidad e impermeabilización.",
-    related: ["impermeabilizacion-terrazas", "cesped-artificial"],
+    related: [
+      "reformas-gran-canaria",
+      "impermeabilizacion-terrazas",
+      "cesped-artificial",
+    ],
   },
   {
     slug: "impermeabilizacion-terrazas",
@@ -379,7 +383,7 @@ export const services: Service[] = [
       "Impermeabilización de terrazas y fachadas en Valencia | Lozartico",
     metaDescription:
       "Impermeabilización de terrazas, cubiertas, tejados y fachadas en Valencia. Soluciones contra filtraciones, humedades y goteras.",
-    related: ["reformas-valencia", "cesped-artificial"],
+    related: ["reformas-valencia", "reformas-gran-canaria", "cesped-artificial"],
   },
   {
     slug: "fontaneria",
@@ -585,7 +589,11 @@ export const services: Service[] = [
       "Aire acondicionado en Valencia | Instalación y climatización | Lozartico",
     metaDescription:
       "Instalación de aire acondicionado en Valencia para viviendas, oficinas y locales. Split, conductos y climatización adaptada al espacio.",
-    related: ["reformas-valencia", "impermeabilizacion-terrazas"],
+    related: [
+      "reformas-valencia",
+      "aire-acondicionado-gran-canaria",
+      "impermeabilizacion-terrazas",
+    ],
   },
   {
     slug: "cesped-artificial",
@@ -794,7 +802,11 @@ export const services: Service[] = [
       "Reformas integrales en Gran Canaria | Viviendas y locales | Lozartico",
     metaDescription:
       "Reformas integrales en Gran Canaria para viviendas, locales y comunidades. Baños, cocinas, alicatados, pintura e impermeabilización con acabados duraderos.",
-    related: ["reformas-valencia", "impermeabilizacion-terrazas"],
+    related: [
+      "reformas-valencia",
+      "aire-acondicionado-gran-canaria",
+      "impermeabilizacion-terrazas",
+    ],
   },
   {
     slug: "aire-acondicionado-gran-canaria",

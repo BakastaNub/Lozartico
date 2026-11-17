@@ -31,6 +31,7 @@ const coverage = [
         label: "Aire acondicionado en Gran Canaria",
         href: "/aire-acondicionado-gran-canaria",
       },
+      { label: "Presupuesto", href: "/#contacto" },
     ],
   },
 ];

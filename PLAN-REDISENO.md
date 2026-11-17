@@ -21,6 +21,8 @@ Reposicionar la web de Lozartico alrededor de la construcción, la reforma y el 
 - El icono de la web se genera con fondo azul y texto blanco.
 - El teléfono principal sigue siendo el 634 33 25 65.
 - Se mantiene el contacto directo por WhatsApp, teléfono y email, sin formularios.
+- Se añade un crédito discreto “Made by Wilsolution” en el footer, con enlace a wilsolution.com.
+- Valencia y Gran Canaria tienen la misma presencia en la portada, mapas, navegación y servicios.
 
 ## Servicios
 

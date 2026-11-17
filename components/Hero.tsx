@@ -97,8 +97,8 @@ export function Hero() {
             <div className="hero__badge">
               <MapPinIcon size={18} />
               <div>
-                <strong>Valencia</strong>
-                <span>Gran Canaria</span>
+                <strong>Valencia y Gran Canaria</strong>
+                <span>Dos zonas de servicio</span>
               </div>
             </div>
           </div>
