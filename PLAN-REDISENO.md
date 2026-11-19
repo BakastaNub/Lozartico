@@ -43,6 +43,15 @@ Las URLs antiguas redirigen a la página correspondiente.
 
 Se eliminaron de la portada el proceso genérico, la sección independiente de clientes, la sección independiente de acreditaciones y las FAQ generales.
 
+## SEO
+
+- Metadatos únicos por página y keywords.
+- Canonical, Open Graph y Twitter Card cuando existe dominio.
+- Datos estructurados de empresa, servicios, FAQ y migas de pan.
+- Sitemap y robots generados.
+- Sin texto oculto ni cloaking.
+- El dominio real debe configurarse en `NEXT_PUBLIC_SITE_URL`.
+
 ## Contenido
 
 - Sustituir “coordinamos” por “implementamos”, “ejecutamos” o “realizamos”.

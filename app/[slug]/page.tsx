@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -60,6 +60,12 @@ export async function generateMetadata({
   return {
     title: { absolute: service.metaTitle },
     description: service.metaDescription,
+    keywords: [
+      service.title,
+      `${service.title} Valencia`,
+      `${service.title} Gran Canaria`,
+      "Lozartico",
+    ],
     alternates: canonical(`/${service.slug}/`),
     robots: indexableRobots,
     openGraph: {
@@ -400,3 +406,4 @@ export default async function ServicePage({ params }: ServicePageProps) {
     </>
   );
 }
+

@@ -29,6 +29,7 @@ export function localBusinessSchema() {
     logo: absoluteUrl("/images/logo-lozartico.webp"),
     priceRange: "$$",
     knowsAbout: [
+      "Obra nueva",
       "Reformas integrales",
       "Construcción",
       "Alicatados",
@@ -38,9 +39,33 @@ export function localBusinessSchema() {
       "Electricidad",
       "Climatización",
       "Césped artificial",
-      "Administración de fincas",
-      "Mantenimiento",
+      "Mantenimiento de comunidades y fincas",
     ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Servicios de construcción, reforma y mantenimiento",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Construcción y reformas",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Instalaciones" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Impermeabilización" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Mantenimiento" },
+        },
+      ],
+    },
     hasCredential: [
       {
         "@type": "EducationalOccupationalCredential",
@@ -113,16 +138,26 @@ export function faqPageSchema(faqs: FAQ[]) {
   };
 }
 
+const serviceTypes: Record<Service["category"], string> = {
+  construccion: "Construcción y reformas",
+  instalaciones: "Fontanería, electricidad y climatización",
+  impermeabilizacion: "Impermeabilización",
+  mantenimiento: "Mantenimiento de comunidades y fincas",
+};
+
 export function serviceSchema(service: Service) {
+  const url = absoluteUrl("/");
+
   return {
     "@context": "https://schema.org",
     "@type": "Service",
     name: service.title,
-    serviceType: service.category,
+    serviceType: serviceTypes[service.category],
     description: service.metaDescription,
     url: absoluteUrl(`/${service.slug}/`),
     provider: {
       "@type": "GeneralContractor",
+      "@id": url ? `${url}#organization` : undefined,
       name: siteConfig.name,
       telephone: siteConfig.phone,
       email: siteConfig.email,

@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: "Lozartico",
   legalName: "Lozartico Servicios Integrales, S.L.U.",
   description:
-    "Construcción, reforma y mantenimiento, alicatados, pintura, impermeabilización, fontanería, electricidad, climatización y césped artificial en Valencia y Gran Canaria.",
+    "Obra nueva, reformas y mantenimiento, alicatados, pintura, impermeabilización, fontanería, electricidad, climatización y césped artificial en Valencia y Gran Canaria.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "",
   phone: "+34634332565",
   phoneDisplay: "+34 634 33 25 65",

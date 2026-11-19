@@ -49,6 +49,14 @@ NEXT_PUBLIC_SITE_URL=https://tu-dominio.com
 
 Después vuelve a ejecutar `npm run build`.
 
+## SEO
+
+La web incluye metadatos por página, keywords, canonical, Open Graph, Twitter Card, robots, sitemap, datos estructurados `GeneralContractor`, `Service`, `FAQPage` y `BreadcrumbList`.
+
+No se usa texto oculto ni cloaking. Google ignora las meta keywords y penaliza el contenido invisible; el posicionamiento se basa en contenido visible, estructura, enlaces internos, mapas y datos verificables.
+
+Para activar canonical, sitemap y URLs absolutas es imprescindible configurar `NEXT_PUBLIC_SITE_URL` con el dominio real.
+
 ## Estructura
 
 ```text
