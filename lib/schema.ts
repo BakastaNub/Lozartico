@@ -1,4 +1,4 @@
-import type { FAQ } from "@/content/faqs";
+﻿import type { FAQ } from "@/content/faqs";
 import type { Service } from "@/content/services";
 import { siteConfig } from "@/content/site";
 import { absoluteUrl } from "./seo";
@@ -89,6 +89,7 @@ export function localBusinessSchema() {
     areaServed: [
       { "@type": "City", name: "Valencia" },
       { "@type": "AdministrativeArea", name: "Gran Canaria" },
+      { "@type": "AdministrativeArea", name: "Lanzarote" },
     ],
     openingHoursSpecification: [
       {
@@ -165,6 +166,7 @@ export function serviceSchema(service: Service) {
     areaServed: [
       { "@type": "City", name: "Valencia" },
       { "@type": "AdministrativeArea", name: "Gran Canaria" },
+      { "@type": "AdministrativeArea", name: "Lanzarote" },
     ],
   };
 }
@@ -181,3 +183,4 @@ export function breadcrumbSchema(items: { name: string; path: string }[]) {
     })),
   };
 }
+

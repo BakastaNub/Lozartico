@@ -1,4 +1,4 @@
-import type { CSSProperties } from "react";
+﻿import type { CSSProperties } from "react";
 
 import { siteConfig } from "@/content/site";
 import { mailtoHref, whatsappHref } from "@/lib/contact";
@@ -119,7 +119,7 @@ export function ContactSection({ service }: ContactSectionProps) {
             </span>
             <span className="contact-card__body">
               <span className="contact-card__label">Dónde estamos</span>
-              <strong>Valencia · Gran Canaria</strong>
+              <strong>Valencia · Gran Canaria · Lanzarote</strong>
               <span className="contact-card__text">
                 Consulta la ubicación y las opiniones en Google Maps.
               </span>
@@ -131,3 +131,4 @@ export function ContactSection({ service }: ContactSectionProps) {
     </section>
   );
 }
+

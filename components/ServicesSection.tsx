@@ -30,7 +30,7 @@ export function ServicesSection() {
           <SectionHeading
             eyebrow="Servicios"
             title="Cuatro servicios, una forma de trabajar"
-            text="Obra nueva, reformas, instalaciones, impermeabilización y mantenimiento. Ejecutamos cada trabajo según su alcance y las dos zonas de servicio."
+            text="Obra nueva, reformas, instalaciones, impermeabilización y mantenimiento. Ejecutamos cada trabajo según su alcance y las tres zonas de servicio."
           />
           <Link className="section-link" href="#contacto">
             Hablemos de tu trabajo

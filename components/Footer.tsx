@@ -37,7 +37,7 @@ export function Footer() {
             />
           </Link>
           <p className="footer__description">
-            Construcción, reformas y mantenimiento en Valencia y Gran Canaria.
+            Construcción, reformas y mantenimiento en Valencia, Gran Canaria y Lanzarote.
             Obra nueva, reformas, instalaciones, impermeabilización y
             mantenimiento.
           </p>
@@ -103,7 +103,7 @@ export function Footer() {
                 rel="noopener noreferrer"
               >
                 <MapPinIcon size={16} />
-                Valencia · Gran Canaria
+                Valencia · Gran Canaria · Lanzarote
               </a>
             </li>
           </ul>
@@ -139,3 +139,4 @@ export function Footer() {
     </footer>
   );
 }
+

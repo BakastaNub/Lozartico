@@ -16,7 +16,7 @@ export function mailtoHref(service?: string) {
     "",
     "Nombre:",
     "Teléfono:",
-    "Zona (Valencia / Gran Canaria):",
+    "Zona (Valencia / Gran Canaria / Lanzarote):",
     service ? `Servicio: ${service}` : "Servicio:",
     "Detalles del trabajo:",
     "",

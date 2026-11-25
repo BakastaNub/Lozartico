@@ -1,0 +1,152 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NEXT_TELEMETRY_DISABLED = "1"
+  NEXT_PUBLIC_SITE_URL = "https://lozartic.es"
+
+[[redirects]]
+  from = "/reformas-valencia"
+  to = "/construccion-reformas/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reformas-valencia/"
+  to = "/construccion-reformas/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reformas-gran-canaria"
+  to = "/construccion-reformas/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reformas-gran-canaria/"
+  to = "/construccion-reformas/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fontaneria"
+  to = "/instalaciones/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fontaneria/"
+  to = "/instalaciones/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/electricidad"
+  to = "/instalaciones/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/electricidad/"
+  to = "/instalaciones/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/aire-acondicionado-*"
+  to = "/instalaciones/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/impermeabilizacion-terrazas"
+  to = "/impermeabilizacion/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/impermeabilizacion-terrazas/"
+  to = "/impermeabilizacion/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/exteriores"
+  to = "/impermeabilizacion/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/exteriores/"
+  to = "/impermeabilizacion/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cesped-artificial"
+  to = "/construccion-reformas/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cesped-artificial/"
+  to = "/construccion-reformas/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/administracion-fincas"
+  to = "/mantenimiento/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/administracion-fincas/"
+  to = "/mantenimiento/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contacto.html"
+  to = "/#contacto"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/proyectos.html"
+  to = "/#trabajos"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/servicios-locales.html"
+  to = "/#servicios"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terrazas.html"
+  to = "/impermeabilizacion/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/impermeabilizacion-terrazas.html"
+  to = "/impermeabilizacion/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/construccion-reformas-valencia.html"
+  to = "/construccion-reformas/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/construccion-reformas-gran-canaria.html"
+  to = "/construccion-reformas/"
+  status = 301
+  force = true

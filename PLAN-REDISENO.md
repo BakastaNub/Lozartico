@@ -1,4 +1,4 @@
-# Plan de rediseño · Lozartico
+﻿# Plan de rediseño · Lozartico
 
 **Estado:** implementado el 17/11/2026
 **Repositorio:** https://github.com/BakastaNub/Lozartico
@@ -13,7 +13,7 @@ Reorganizar la web alrededor de cuatro servicios claros y evitar el contenido du
 - Cuatro servicios: construcción y reformas, instalaciones, impermeabilización y mantenimiento.
 - El césped artificial es una instalación general; la imagen de ejemplo corresponde a un espacio cubierto.
 - Cuatro páginas de servicio, sin landings duplicadas por provincia.
-- Valencia y Gran Canaria tienen la misma presencia y comparten cada servicio.
+- Valencia, Gran Canaria y Lanzarote tienen la misma presencia y comparten cada servicio.
 - “Trabajos realizados” sustituye a “Proyectos”.
 - “Mantenimiento de comunidades y fincas” sustituye a “Administración de fincas”.
 - Se eliminó el trabajo del armario empotrado y su imagen.
@@ -21,6 +21,9 @@ Reorganizar la web alrededor de cuatro servicios claros y evitar el contenido du
 - El logo mantiene el fondo azul, el texto original, más margen y esquinas redondeadas.
 - El icono tiene fondo azul y texto blanco.
 - Se añadió un crédito discreto “Made by Wilsolution” en el footer.
+- El flujo de publicación es GitHub → Netlify → https://lozartic.es.
+- Se incorporaron reformas de baños dentro de construcción y reformas, sin convertir la web en una página especializada.
+- Netlify compila Next.js y publica `out/`; el workflow de GitHub Pages se eliminó.
 
 ## Páginas
 
@@ -37,7 +40,7 @@ Las URLs antiguas redirigen a la página correspondiente.
 2. Cuatro tarjetas de servicio.
 3. Trabajos realizados.
 4. Empresa, con una línea compacta de acreditaciones.
-5. Cobertura con mapas de Valencia y Gran Canaria.
+5. Cobertura con mapas de Valencia, Gran Canaria y Lanzarote.
 6. Opiniones.
 7. Contacto.
 
@@ -46,11 +49,11 @@ Se eliminaron de la portada el proceso genérico, la sección independiente de c
 ## SEO
 
 - Metadatos únicos por página y keywords.
-- Canonical, Open Graph y Twitter Card cuando existe dominio.
+- Canonical, Open Graph y Twitter Card con el dominio configurado.
 - Datos estructurados de empresa, servicios, FAQ y migas de pan.
 - Sitemap y robots generados.
 - Sin texto oculto ni cloaking.
-- El dominio real debe configurarse en `NEXT_PUBLIC_SITE_URL`.
+- Dominio configurado en `.env.production` como `https://lozartic.es`.
 
 ## Contenido
 
@@ -64,7 +67,9 @@ Se eliminaron de la portada el proceso genérico, la sección independiente de c
 ## Pendiente
 
 - Añadir fotos de conductos de climatización.
-- Configurar el dominio definitivo en `NEXT_PUBLIC_SITE_URL`.
 - Revisar las reseñas y los textos legales con el cliente.
 - Revisar los mapas y la cobertura antes de publicar.
-- Actualizar el workflow de GitHub Pages para publicar `out/`.
+- Verificar Google Search Console y Google Business Profile.
+- Comprobar el deploy de Netlify desde `out/`.
+
+

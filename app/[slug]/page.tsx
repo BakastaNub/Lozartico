@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { CSSProperties } from "react";
 
+import { BathroomsSection } from "@/components/BathroomsSection";
 import { ContactSection } from "@/components/ContactSection";
 import {
   ArrowRightIcon,
@@ -64,6 +65,7 @@ export async function generateMetadata({
       service.title,
       `${service.title} Valencia`,
       `${service.title} Gran Canaria`,
+      `${service.title} Lanzarote`,
       "Lozartico",
     ],
     alternates: canonical(`/${service.slug}/`),
@@ -157,7 +159,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               >
                 <span>
                   <MapPinIcon size={16} />
-                  Valencia y Gran Canaria
+                  Valencia, Gran Canaria y Lanzarote
                 </span>
                 <span>
                   <CheckIcon size={16} />
@@ -237,6 +239,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
           </div>
         </div>
       </section>
+
+      {service.slug === "construccion-reformas" ? <BathroomsSection /> : null}
 
       <section className="section section--navy landing-steps">
         <div className="container">
@@ -406,4 +410,5 @@ export default async function ServicePage({ params }: ServicePageProps) {
     </>
   );
 }
+
 

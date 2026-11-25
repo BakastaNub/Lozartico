@@ -1,9 +1,9 @@
-export const siteConfig = {
+﻿export const siteConfig = {
   name: "Lozartico Servicios Integrales, S.L.U.",
-  shortName: "Lozartico",
+  shortName: "LOZ.ARTICO",
   legalName: "Lozartico Servicios Integrales, S.L.U.",
   description:
-    "Obra nueva, reformas y mantenimiento, alicatados, pintura, impermeabilización, fontanería, electricidad, climatización y césped artificial en Valencia y Gran Canaria.",
+    "Obra nueva, reformas y mantenimiento, incluidas reformas de baños, alicatados, pintura, impermeabilización, fontanería, electricidad, climatización y césped artificial en Valencia, Gran Canaria y Lanzarote.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "",
   phone: "+34634332565",
   phoneDisplay: "+34 634 33 25 65",
@@ -35,7 +35,7 @@ export const siteConfig = {
   },
   openingHours: "Mo-Fr 08:00-19:00",
   experience: "Equipo de más de 15 años de experiencia",
-  zones: ["Valencia", "Gran Canaria"],
+  zones: ["Valencia", "Gran Canaria", "Lanzarote"],
   iso: {
     name: "ISO 14001:2015",
     title: "Sistema de Gestión Ambiental",
@@ -43,3 +43,5 @@ export const siteConfig = {
 };
 
 export type SiteConfig = typeof siteConfig;
+
+

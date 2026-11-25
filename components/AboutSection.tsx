@@ -37,7 +37,7 @@ export function AboutSection() {
           <SectionHeading
             eyebrow="Empresa"
             title="Un equipo que ejecuta la obra de principio a fin"
-            text="Lozartico Servicios Integrales, S.L.U. ejecuta obra nueva, reformas, instalaciones y mantenimiento para particulares, comunidades y empresas en Valencia y Gran Canaria."
+            text="Lozartico Servicios Integrales, S.L.U. ejecuta obra nueva, reformas, instalaciones y mantenimiento para particulares, comunidades y empresas en Valencia, Gran Canaria y Lanzarote."
           />
 
           <p>
@@ -78,3 +78,4 @@ export function AboutSection() {
     </section>
   );
 }
+

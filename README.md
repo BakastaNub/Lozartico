@@ -1,6 +1,6 @@
-# Lozartico
+﻿# Lozartico
 
-Sitio web de Lozartico Servicios Integrales, S.L.U.: construcción, reformas y mantenimiento en Valencia y Gran Canaria, incluido césped artificial.
+Sitio web de Lozartico Servicios Integrales, S.L.U.: construcción, reformas y mantenimiento en Valencia, Gran Canaria y Lanzarote, incluido césped artificial.
 
 La web se organiza en cuatro servicios: construcción y reformas, instalaciones, impermeabilización y mantenimiento. La empresa ejecuta los trabajos; no redacta proyectos de arquitectura ni asume la dirección facultativa.
 
@@ -9,7 +9,8 @@ La web se organiza en cuatro servicios: construcción y reformas, instalaciones,
 - Stack: Next.js 15, React 19, TypeScript, CSS propio y exportación estática
 - Diseño: navy, dorado y crema
 - Rutas: portada, 4 servicios, aviso legal y privacidad
-- Cobertura: Valencia y Gran Canaria, con mapas de ambas zonas
+- Cobertura: Valencia, Gran Canaria y Lanzarote, con mapas de las tres zonas
+- Despliegue: GitHub → Netlify → https://lozartic.es
 
 ## Requisitos
 
@@ -37,17 +38,15 @@ npm run images     # optimiza imágenes y regenera la portada social
 npm run icons      # genera favicon e iconos con fondo azul
 ```
 
+## Despliegue
+
+Netlify está conectado a la rama `main` y es la única plataforma de despliegue. La configuración está en `netlify.toml`: build `npm run build`, publish `out`, variables de entorno y redirecciones 301 de las URLs antiguas.
+
 ## Configuración
 
-El dominio público se configura con `NEXT_PUBLIC_SITE_URL`. Sin esta variable no se generan URLs canónicas, Open Graph absolutas ni entradas en el sitemap.
+El dominio público está configurado en `.env.production` como `NEXT_PUBLIC_SITE_URL=https://lozartic.es`. Sin esta variable no se generan URLs canónicas, Open Graph absolutas ni entradas en el sitemap.
 
-Crea `.env.local` en la raíz:
-
-```bash
-NEXT_PUBLIC_SITE_URL=https://tu-dominio.com
-```
-
-Después vuelve a ejecutar `npm run build`.
+Para cambiar de dominio, actualiza `.env.production` y vuelve a ejecutar `npm run build`.
 
 ## SEO
 
@@ -55,7 +54,7 @@ La web incluye metadatos por página, keywords, canonical, Open Graph, Twitter C
 
 No se usa texto oculto ni cloaking. Google ignora las meta keywords y penaliza el contenido invisible; el posicionamiento se basa en contenido visible, estructura, enlaces internos, mapas y datos verificables.
 
-Para activar canonical, sitemap y URLs absolutas es imprescindible configurar `NEXT_PUBLIC_SITE_URL` con el dominio real.
+Canonical, sitemap y URLs absolutas se generan con el dominio `https://lozartic.es`.
 
 ## Estructura
 
@@ -69,16 +68,16 @@ scripts/             Generación reproducible de imágenes e iconos
 legacy/              Fuentes originales de fotos, logo e icono
 ```
 
-La web se genera como sitio estático en `out/`. Ese directorio es el que debe publicarse en GitHub Pages o en cualquier hosting estático.
+La web se genera como sitio estático en `out/`. Netlify compila desde GitHub y publica ese directorio.
 
 ## Servicios
 
-- `/construccion-reformas`: obra nueva, reformas integrales, baños, cocinas, alicatados, pintura, suelos y césped artificial.
+- `/construccion-reformas`: obra nueva, reformas integrales, reformas de baños, cocinas, alicatados, pintura, suelos y césped artificial.
 - `/instalaciones`: fontanería, electricidad y climatización.
 - `/impermeabilizacion`: terrazas, cubiertas, tejados y fachadas.
 - `/mantenimiento`: comunidades, fincas, bajantes y zonas comunes.
 
-Las antiguas URLs de Valencia/Gran Canaria redirigen a estas páginas.
+Las antiguas URLs de Valencia y Gran Canaria redirigen a estas páginas.
 
 ## Datos de empresa
 
@@ -99,10 +98,12 @@ El icono original está en `legacy/brand/lozartico.ico`. De ahí se generan el f
 
 ## Antes de publicar
 
-- Configurar `NEXT_PUBLIC_SITE_URL` con el dominio definitivo.
 - Revisar la documentación legal antes de publicarla.
 - Revisar los datos de contacto si cambian.
 - Revisar las reseñas y los textos de los trabajos con el titular del negocio.
 - Añadir las fotos de conductos de climatización cuando estén disponibles.
-- Revisar los mapas de Valencia y Gran Canaria.
-- Actualizar el workflow de GitHub Pages si se publica desde `out/`.
+- Revisar los mapas de Valencia, Gran Canaria y Lanzarote.
+- Verificar Google Search Console y Google Business Profile.
+- Comprobar el deploy de Netlify desde `out/`.
+
+

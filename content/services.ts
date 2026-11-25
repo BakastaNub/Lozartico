@@ -195,10 +195,10 @@ export const services: Service[] = [
     eyebrow: "Obra nueva y reformas",
     title: "Construcción y reformas",
     heroText:
-      "Ejecutamos obra nueva y reformas integrales de viviendas, locales y comunidades en Valencia y Gran Canaria, según el proyecto y la dirección técnica aportados. También instalamos césped artificial.",
+      "Ejecutamos obra nueva y reformas integrales de viviendas, locales y comunidades en Valencia, Gran Canaria y Lanzarote, según el proyecto y la dirección técnica aportados. También realizamos reformas de baños y césped artificial.",
     introTitle: "Obra nueva y reformas, ejecutadas con orden",
     introText:
-      "Nos encargamos de la ejecución: albañilería, alicatados, pintura, suelos, instalaciones y acabados. No redactamos proyectos de arquitectura ni asumimos la dirección facultativa.",
+      "Nos encargamos de la ejecución: albañilería, alicatados, pintura, suelos, instalaciones y acabados. Incluimos reformas y remodelaciones de baños. No redactamos proyectos de arquitectura ni asumimos la dirección facultativa.",
     benefitsTitle: "Qué ejecutamos",
     benefits: [
       {
@@ -244,19 +244,29 @@ export const services: Service[] = [
           "Depende del estado del inmueble. Puede incluir demolición, albañilería, instalaciones, alicatados, suelos, pintura y acabados.",
       },
       {
-        question: "¿Trabajáis en Valencia y Gran Canaria?",
+        question: "¿Hacéis reformas de baños?",
         answer:
-          "Sí. Ejecutamos trabajos en Valencia y Gran Canaria. Escríbenos con la ubicación para confirmar disponibilidad.",
+          "Sí. Ejecutamos reformas integrales de baños, cambio de bañera por ducha, alicatado, revestimientos, sanitarios, grifería, fontanería y electricidad.",
+      },
+      {
+        question: "¿Cambiáis la bañera por una ducha?",
+        answer:
+          "Sí. Valoramos el espacio y la instalación existente para adaptar el baño a una ducha, incluyendo los trabajos de albañilería, alicatado y fontanería necesarios.",
+      },
+      {
+        question: "¿Trabajáis en Valencia, Gran Canaria y Lanzarote?",
+        answer:
+          "Sí. Ejecutamos trabajos en Valencia, Gran Canaria y Lanzarote. Escríbenos con la ubicación para confirmar disponibilidad.",
       },
     ],
     image: images.bano1,
     gallery: [images.bano2, images.construccion, images.suelo1, images.suelo2, images.cesped1, images.cesped3],
     whatsappMessage:
-      "Hola, quiero presupuesto para una obra o reforma.",
+      "Hola, quiero presupuesto para una obra, reforma o baño.",
     metaTitle:
-      "Construcción y reformas en Valencia y Gran Canaria | Lozartico",
+      "Construcción y reformas | Reformas de baños | LOZ.ARTICO",
     metaDescription:
-      "Ejecución de obra nueva y reformas integrales en Valencia y Gran Canaria. Baños, cocinas, alicatados, pintura y suelos.",
+      "Obra nueva y reformas integrales, incluidas reformas y remodelaciones de baños. Trabajamos en Valencia, Gran Canaria y Lanzarote.",
     related: ["instalaciones", "impermeabilizacion"],
   },
   {
@@ -265,7 +275,7 @@ export const services: Service[] = [
     eyebrow: "Fontanería, electricidad y climatización",
     title: "Instalaciones",
     heroText:
-      "Implementamos fontanería, electricidad y climatización en viviendas, locales y comunidades de Valencia y Gran Canaria.",
+      "Implementamos fontanería, electricidad y climatización en viviendas, locales y comunidades de Valencia, Gran Canaria y Lanzarote.",
     introTitle: "Instalaciones integradas en el trabajo",
     introText:
       "Revisamos la instalación existente y ejecutamos la solución acordada: renovación, reparación o instalación nueva. Cuando forma parte de una reforma, implementamos los trabajos en el orden acordado.",
@@ -316,16 +326,16 @@ export const services: Service[] = [
       {
         question: "¿En qué zonas trabajáis?",
         answer:
-          "Trabajamos en Valencia y Gran Canaria. Escríbenos con la ubicación y el tipo de instalación.",
+          "Trabajamos en Valencia, Gran Canaria y Lanzarote. Escríbenos con la ubicación y el tipo de instalación.",
       },
     ],
     image: images.aire,
     gallery: [],
     whatsappMessage: "Hola, quiero presupuesto para una instalación.",
     metaTitle:
-      "Fontanería, electricidad y climatización en Valencia y Gran Canaria | Lozartico",
+      "Fontanería, electricidad y climatización en Valencia, Gran Canaria y Lanzarote | LOZ.ARTICO",
     metaDescription:
-      "Instalaciones de fontanería, electricidad y climatización en Valencia y Gran Canaria. Reparaciones, renovaciones y mantenimiento.",
+      "Instalaciones de fontanería, electricidad y climatización en Valencia, Gran Canaria y Lanzarote. Reparaciones, renovaciones y mantenimiento.",
     related: ["construccion-reformas", "mantenimiento"],
   },
   {
@@ -334,7 +344,7 @@ export const services: Service[] = [
     eyebrow: "Impermeabilización",
     title: "Impermeabilización de terrazas, tejados y fachadas",
     heroText:
-      "Ejecutamos trabajos de impermeabilización en terrazas, cubiertas, tejados y fachadas de Valencia y Gran Canaria.",
+      "Ejecutamos trabajos de impermeabilización en terrazas, cubiertas, tejados y fachadas de Valencia, Gran Canaria y Lanzarote.",
     introTitle: "Resolver la filtración desde el origen",
     introText:
       "Revisamos el soporte, los encuentros y el drenaje antes de aplicar el sistema. El objetivo es proteger la superficie y evitar que el problema vuelva.",
@@ -383,18 +393,18 @@ export const services: Service[] = [
           "Depende del estado del soporte y del sistema. Lo valoramos después de revisar la superficie.",
       },
       {
-        question: "¿Trabajáis en Valencia y Gran Canaria?",
+        question: "¿Trabajáis en Valencia, Gran Canaria y Lanzarote?",
         answer:
-          "Sí. Realizamos trabajos de impermeabilización en Valencia y Gran Canaria.",
+          "Sí. Realizamos trabajos de impermeabilización en Valencia, Gran Canaria y Lanzarote.",
       },
     ],
     image: images.tejado,
     gallery: [images.patio],
     whatsappMessage: "Hola, quiero presupuesto para impermeabilización.",
     metaTitle:
-      "Impermeabilización en Valencia y Gran Canaria | Lozartico",
+      "Impermeabilización en Valencia, Gran Canaria y Lanzarote | LOZ.ARTICO",
     metaDescription:
-      "Impermeabilización de terrazas, cubiertas, tejados y fachadas en Valencia y Gran Canaria. Soluciones frente a filtraciones y humedades.",
+      "Impermeabilización de terrazas, cubiertas, tejados y fachadas en Valencia, Gran Canaria y Lanzarote. Soluciones frente a filtraciones y humedades.",
     related: ["construccion-reformas", "mantenimiento"],
   },
   {
@@ -403,7 +413,7 @@ export const services: Service[] = [
     eyebrow: "Comunidades y fincas",
     title: "Mantenimiento de comunidades y fincas",
     heroText:
-      "Reparamos y mantenemos comunidades y fincas en Valencia y Gran Canaria: bajantes, filtraciones, zonas comunes y actuaciones puntuales.",
+      "Reparamos y mantenemos comunidades y fincas en Valencia, Gran Canaria y Lanzarote: bajantes, filtraciones, zonas comunes y actuaciones puntuales.",
     introTitle: "Un interlocutor para el mantenimiento de la finca",
     introText:
       "Atendemos la necesidad concreta, revisamos el alcance y ejecutamos la reparación sin añadir trabajos que no sean necesarios.",
@@ -444,7 +454,7 @@ export const services: Service[] = [
       {
         question: "¿Trabajáis con administradores de fincas?",
         answer:
-          "Sí. Atendemos comunidades y administradores de fincas en Valencia y Gran Canaria.",
+          "Sí. Atendemos comunidades y administradores de fincas en Valencia, Gran Canaria y Lanzarote.",
       },
       {
         question: "¿Reparáis bajantes y filtraciones?",
@@ -461,9 +471,9 @@ export const services: Service[] = [
     gallery: [images.suelo1, images.suelo2],
     whatsappMessage: "Hola, quiero presupuesto para mantenimiento.",
     metaTitle:
-      "Mantenimiento de comunidades y fincas en Valencia y Gran Canaria | Lozartico",
+      "Mantenimiento de comunidades y fincas en Valencia, Gran Canaria y Lanzarote | LOZ.ARTICO",
     metaDescription:
-      "Mantenimiento de comunidades y fincas en Valencia y Gran Canaria. Bajantes, filtraciones, zonas comunes y reparaciones.",
+      "Mantenimiento de comunidades y fincas en Valencia, Gran Canaria y Lanzarote. Bajantes, filtraciones, zonas comunes y reparaciones.",
     related: ["instalaciones", "construccion-reformas"],
   },
 ];
@@ -477,3 +487,4 @@ export function getRelatedServices(service: Service) {
     .map((slug) => getService(slug))
     .filter((related): related is Service => Boolean(related));
 }
+

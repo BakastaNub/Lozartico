@@ -38,8 +38,8 @@ export default function AvisoLegalPage() {
       <p>
         El sitio tiene carácter informativo y presenta los servicios de
         construcción, reformas, instalaciones y climatización que realiza
-        Lozartico en Valencia y Gran Canaria, así como trabajos realizados y
-        vías de contacto.
+        Lozartico en Valencia, Gran Canaria y Lanzarote, así como trabajos
+        realizados y vías de contacto.
       </p>
 
       <h2>3. Condiciones de uso</h2>

@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import type { CSSProperties } from "react";
 
@@ -13,7 +13,7 @@ export function Hero() {
         <div className="hero__content">
           <span className="hero__tag" data-reveal>
             <span className="hero__tag-dot" aria-hidden="true" />
-            Valencia · Gran Canaria
+            Valencia · Gran Canaria · Lanzarote
           </span>
 
           <h1 data-reveal style={{ "--reveal-delay": "60ms" } as CSSProperties}>
@@ -68,8 +68,8 @@ export function Hero() {
               <span>de experiencia del equipo</span>
             </div>
             <div className="hero__stat">
-              <strong>2 zonas</strong>
-              <span>Valencia y Gran Canaria</span>
+              <strong>3 zonas</strong>
+              <span>Valencia, Gran Canaria y Lanzarote</span>
             </div>
             <div className="hero__stat">
               <strong>Pública y privada</strong>
@@ -97,8 +97,8 @@ export function Hero() {
             <div className="hero__badge">
               <MapPinIcon size={18} />
               <div>
-                <strong>Valencia y Gran Canaria</strong>
-                <span>Dos zonas de servicio</span>
+                <strong>Valencia, Gran Canaria y Lanzarote</strong>
+                <span>Tres zonas de servicio</span>
               </div>
             </div>
           </div>
@@ -107,3 +107,4 @@ export function Hero() {
     </section>
   );
 }
+

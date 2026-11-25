@@ -27,11 +27,11 @@ export const metadata: Metadata = {
   ...(siteConfig.url ? { metadataBase: new URL(siteConfig.url) } : {}),
   title: {
     default:
-      "Lozartico | Construcción, reforma y mantenimiento en Valencia y Gran Canaria",
-    template: "%s | Lozartico",
+      "LOZ.ARTICO | Construcción, reforma y mantenimiento en Valencia, Gran Canaria y Lanzarote",
+    template: "%s | LOZ.ARTICO",
   },
   description:
-    "Construcción, reforma y mantenimiento en Valencia y Gran Canaria. Alicatados, pintura, impermeabilización, fontanería, electricidad, climatización y césped artificial.",
+    "Construcción, reforma y mantenimiento, incluidas reformas de baños, en Valencia, Gran Canaria y Lanzarote. Alicatados, pintura, impermeabilización, fontanería, electricidad, climatización y césped artificial.",
   applicationName: siteConfig.shortName,
   authors: [{ name: siteConfig.legalName }],
   creator: siteConfig.legalName,
@@ -40,7 +40,9 @@ export const metadata: Metadata = {
   keywords: [
     "obra nueva Valencia",
     "reformas Valencia",
+    "reformas de baños Valencia",
     "reformas Gran Canaria",
+    "reformas Lanzarote",
     "construcción Valencia",
     "mantenimiento Valencia",
     "mantenimiento de comunidades Valencia",
@@ -49,7 +51,7 @@ export const metadata: Metadata = {
     "electricidad Valencia",
     "césped artificial Valencia",
     "aire acondicionado Valencia",
-    "Lozartico",
+    "LOZ.ARTICO",
   ],
   icons: {
     icon: [
@@ -74,17 +76,17 @@ export const metadata: Metadata = {
     siteName: siteConfig.shortName,
     ...(siteConfig.url ? { url: "/" } : {}),
     title:
-      "Lozartico | Construcción, reforma y mantenimiento en Valencia y Gran Canaria",
+      "LOZ.ARTICO | Construcción, reforma y mantenimiento en Valencia, Gran Canaria y Lanzarote",
     description:
-      "Construcción, reforma y mantenimiento en Valencia y Gran Canaria. Alicatados, pintura, impermeabilización, fontanería, electricidad y climatización.",
+      "Construcción, reforma y mantenimiento, incluidas reformas de baños, en Valencia, Gran Canaria y Lanzarote. Alicatados, pintura, impermeabilización, fontanería, electricidad y climatización.",
     images: ogImages(),
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Lozartico | Construcción, reforma y mantenimiento en Valencia y Gran Canaria",
+      "LOZ.ARTICO | Construcción, reforma y mantenimiento en Valencia, Gran Canaria y Lanzarote",
     description:
-      "Construcción, reforma y mantenimiento en Valencia y Gran Canaria. Presupuesto directo por WhatsApp.",
+      "Construcción, reforma y mantenimiento en Valencia, Gran Canaria y Lanzarote. Presupuesto directo por WhatsApp.",
     images: ogImages()?.map((image) => image.url),
   },
 };
@@ -125,3 +127,6 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+
